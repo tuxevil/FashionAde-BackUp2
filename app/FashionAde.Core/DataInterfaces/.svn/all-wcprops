@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nybble/!svn/ver/4926/FashionAde/trunk/app/FashionAde.Core/DataInterfaces
+END
+IUserOutfitRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nybble/!svn/ver/4600/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IUserOutfitRepository.cs
+END
+IUserSizeRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/3010/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IUserSizeRepository.cs
+END
+IWordingRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/3194/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IWordingRepository.cs
+END
+ITagRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nybble/!svn/ver/3010/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/ITagRepository.cs
+END
+IPatternRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/3282/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IPatternRepository.cs
+END
+IClosetOutfitRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nybble/!svn/ver/4869/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IClosetOutfitRepository.cs
+END
+IStylePhotographRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nybble/!svn/ver/3194/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IStylePhotographRepository.cs
+END
+IGarmentRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/4337/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IGarmentRepository.cs
+END
+IBrandSetRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/3194/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IBrandSetRepository.cs
+END
+IPreGarmentRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nybble/!svn/ver/3420/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IPreGarmentRepository.cs
+END
+IWishListRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/3988/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IWishListRepository.cs
+END
+IFriendRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/nybble/!svn/ver/4808/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IFriendRepository.cs
+END
+IContentCategoryRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nybble/!svn/ver/3921/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IContentCategoryRepository.cs
+END
+IPreCombinationRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IPreCombinationRepository.cs
+END
+IContentPublishedRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nybble/!svn/ver/4407/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IContentPublishedRepository.cs
+END
+IContentRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/4363/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IContentRepository.cs
+END
+IStyleRulesRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nybble/!svn/ver/2851/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IStyleRulesRepository.cs
+END
+IPartnerRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/2862/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IPartnerRepository.cs
+END
+ITrendRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/4378/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/ITrendRepository.cs
+END
+ICategoryRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/3404/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/ICategoryRepository.cs
+END
+IColorRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/3455/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IColorRepository.cs
+END
+IInvitationCodeRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nybble/!svn/ver/4297/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IInvitationCodeRepository.cs
+END
+IBasicUserRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/nybble/!svn/ver/4064/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IBasicUserRepository.cs
+END
+IColorFamilyRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/nybble/!svn/ver/4404/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IColorFamilyRepository.cs
+END
+IFriendRatingInvitationRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/nybble/!svn/ver/3480/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IFriendRatingInvitationRepository.cs
+END
+IFriendProviderRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nybble/!svn/ver/3922/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IFriendProviderRepository.cs
+END
+IEventTypeRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/nybble/!svn/ver/4867/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IEventTypeRepository.cs
+END
+ISilouhetteRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nybble/!svn/ver/3684/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/ISilouhetteRepository.cs
+END
+IFabricRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/nybble/!svn/ver/3688/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IFabricRepository.cs
+END
+IClosetRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/nybble/!svn/ver/4868/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IClosetRepository.cs
+END
+IUserGarmentRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/nybble/!svn/ver/3636/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IUserGarmentRepository.cs
+END
+IRegisteredUserRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nybble/!svn/ver/4579/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IRegisteredUserRepository.cs
+END
+IZipCodeRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/3389/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IZipCodeRepository.cs
+END
+ISecurityQuestionRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nybble/!svn/ver/3311/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/ISecurityQuestionRepository.cs
+END
+IOutfitUpdaterRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/nybble/!svn/ver/4926/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IOutfitUpdaterRepository.cs
+END
+IFashionFlavorRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/nybble/!svn/ver/4165/FashionAde/trunk/app/FashionAde.Core/DataInterfaces/IFashionFlavorRepository.cs
+END

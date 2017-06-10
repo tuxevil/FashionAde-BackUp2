@@ -1,0 +1,6 @@
+﻿<span style="color:#475F8F; font-weight:bold;">Mr. $InviteData.Friend.User.FullName$,</span> <br /><br />
+<span style="color:#000000; font-weight:normal;">$RegisteredUser.FullName$ wants to add you as a Friend on [SITENAME].</span><br /><br />
+<span style="color:#000000; font-weight:normal;">Please click on the following link to accept him or not:</span><br />
+<a href="[SITEURL]$InviteData.AcceptUrl$">[SITEURL]$InviteData.AcceptUrl$</a><br /><br />
+<span style="color:#475F8F; font-weight:normal;">Have fun!</span><br />
+<span style="color:#475F8F; font-weight:bold;">Fashion Ade Team</span>

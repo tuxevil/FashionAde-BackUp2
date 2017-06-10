@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nybble/!svn/ver/4919/FashionAde/trunk/app/FashionAde.Core/Services
+END
+AccessClosetService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/nybble/!svn/ver/4769/FashionAde/trunk/app/FashionAde.Core/Services/AccessClosetService.cs
+END
+FlavorSelectionService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/3205/FashionAde/trunk/app/FashionAde.Core/Services/FlavorSelectionService.cs
+END
+EditorRatingCalculatorService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nybble/!svn/ver/4644/FashionAde/trunk/app/FashionAde.Core/Services/EditorRatingCalculatorService.cs
+END
+OutfitValidationService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/nybble/!svn/ver/4919/FashionAde/trunk/app/FashionAde.Core/Services/OutfitValidationService.cs
+END
+IFlavorSelectionService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/nybble/!svn/ver/3194/FashionAde/trunk/app/FashionAde.Core/Services/IFlavorSelectionService.cs
+END

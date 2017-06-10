@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters
+END
+Reference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/Reference.cs
+END
+Reference.svcmap
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/Reference.svcmap
+END
+configuration91.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/configuration91.svcinfo
+END
+OutfitUpdaterService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/OutfitUpdaterService.wsdl
+END
+item.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/item.xsd
+END
+item1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/item1.xsd
+END
+configuration.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/nybble/!svn/ver/4605/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/configuration.svcinfo
+END
+item.disco
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nybble/!svn/ver/4605/FashionAde/trunk/app/FashionAde.Utils/Service%20References/OutfitUpdaters/item.disco
+END

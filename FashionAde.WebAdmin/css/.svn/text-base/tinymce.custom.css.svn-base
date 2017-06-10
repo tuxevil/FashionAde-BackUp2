@@ -1,0 +1,20 @@
+﻿/***********************************
+			TinyMCE Template
+***********************************/
+
+/*
+	NOTE:	Utilizamos este template para aplicar los estilos del sitio al texto utilizado en TinyMCE, 
+			como por ejemplo, el formato de un título, un párrafo, etc. Se utiliza una hoja de estilo por separado
+			en vez de la del sitio principal porque la misma agrega estilos que no necesitamos para editar (por 
+			ejemplo, una imagen de fondo para los titulos) y no quedan bien en este caso. 
+			En caso de modificar alguno de los atributos generales del sitio principal, tambien debe modificarse 
+			este archivo!
+*/
+
+td { border:0; }
+h1, h2, span, td, div { font-family:Century Gothic; font-size:14px; padding:0 !important; margin:0 !important; background:none !important; }
+h1 { font-size:24px; font-weight:bold; color:#F38333; }
+h2 { color:#4D679B; }
+h2, h3{	font-weight:bold; font-size:14px; }
+p { color:#000; font-size:12px; }
+span, td { font-family:Century Gothic; color:#475F8F; font-weight:bold; }

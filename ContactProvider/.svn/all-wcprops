@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/nybble/!svn/ver/4551/FashionAde/trunk/ContactProvider
+END
+ContactProvider.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/4042/FashionAde/trunk/ContactProvider/ContactProvider.csproj
+END
+ProviderFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nybble/!svn/ver/4280/FashionAde/trunk/ContactProvider/ProviderFactory.cs
+END
+ProviderHttpHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/3860/FashionAde/trunk/ContactProvider/ProviderHttpHandler.cs
+END

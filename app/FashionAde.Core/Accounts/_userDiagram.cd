@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.Accounts.BasicUser">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <Members>
+      <Field Name="_eventTypes" Hidden="true" />
+      <Field Name="_friends" Hidden="true" />
+      <Field Name="_friendsAccepted" Hidden="true" />
+      <Field Name="_friendsThatInvitedMe" Hidden="true" />
+      <Field Name="_userFlavors" Hidden="true" />
+      <Field Name="emailAddress" Hidden="true" />
+      <Property Name="eventTypes" Hidden="true" />
+      <Field Name="eventTypesView" Hidden="true" />
+      <Property Name="friends" Hidden="true" />
+      <Field Name="friendsAcceptedView" Hidden="true" />
+      <Field Name="friendsThatInvitedMeView" Hidden="true" />
+      <Field Name="friendsView" Hidden="true" />
+      <Property Name="userFlavors" Hidden="true" />
+      <Field Name="userFlavorsView" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQkEAUACREBAA4QQEAAAACAAAgAABAACBAAIAgCAIAg=</HashCode>
+      <FileName>Accounts\BasicUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Friends" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FashionAde.Core.Accounts.InvitedUser">
+    <Position X="3.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Accounts\InvitedUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Accounts.RegisteredUser">
+    <Position X="6" Y="9.25" Width="2" />
+    <Members>
+      <Field Name="_status" Hidden="true" />
+      <Field Name="closet" Hidden="true" />
+      <Field Name="membershipUserId" Hidden="true" />
+      <Field Name="phoneNumber" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+      <Field Name="zipCode" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CEABAQAEAABQgAAAAIAAQAAAAEQAAAABAIAAAACAAAg=</HashCode>
+      <FileName>Accounts\RegisteredUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.Accounts.Friend">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <Members>
+      <Field Name="_status" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEABAAAMAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Accounts\Friend.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+      <Property Name="FriendProvider" />
+      <Property Name="Status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.Accounts.FriendProvider" Collapsed="true">
+    <Position X="1.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAgAAAAIAAAAAAA=</HashCode>
+      <FileName>Accounts\FriendProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FashionAde.Core.Accounts.RegisteredUserStatus">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Accounts\RegisteredUserStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FashionAde.Core.Accounts.FriendStatus">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Accounts\Friend.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

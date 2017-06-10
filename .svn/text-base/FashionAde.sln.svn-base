@@ -1,0 +1,273 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Core", "app\FashionAde.Core\FashionAde.Core.csproj", "{26375851-E958-47FE-B328-B7CF26DFD684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.ApplicationServices", "app\FashionAde.ApplicationServices\FashionAde.ApplicationServices.csproj", "{08E9C4A6-6086-4D9E-8D27-41D4159CF95F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Data", "app\FashionAde.Data\FashionAde.Data.csproj", "{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Web.Controllers", "app\FashionAde.Web.Controllers\FashionAde.Web.Controllers.csproj", "{1A214C0E-B4F6-4F91-9878-2BBC34341C66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Tests", "tests\FashionAde.Tests\FashionAde.Tests.csproj", "{6138F54F-859E-4CA0-9559-4A8D5193ECFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Web", "app\FashionAde.Web\FashionAde.Web.csproj", "{C3377EC9-8721-4C15-95AF-B974D36873B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{939A06CD-2830-48B4-BD00-A3CCF77C797A}"
+	ProjectSection(SolutionItems) = preProject
+		lib\FileHelpers.dll = lib\FileHelpers.dll
+		lib\FileHelpers.ExcelStorage.dll = lib\FileHelpers.ExcelStorage.dll
+		lib\FileHelpers.ExcelStorage.pdb = lib\FileHelpers.ExcelStorage.pdb
+		lib\FileHelpers.ExcelStorage.xml = lib\FileHelpers.ExcelStorage.xml
+		lib\FileHelpers.xml = lib\FileHelpers.xml
+		lib\FTPClient.dll = lib\FTPClient.dll
+		lib\ICSharpCode.SharpZipLib.dll = lib\ICSharpCode.SharpZipLib.dll
+		lib\Interop.Excel.dll = lib\Interop.Excel.dll
+		lib\Interop.Office.dll = lib\Interop.Office.dll
+		lib\MCImageManager.dll = lib\MCImageManager.dll
+		lib\MCManager.dll = lib\MCManager.dll
+		lib\MySql.Data.CF.dll = lib\MySql.Data.CF.dll
+		lib\MySql.Data.dll = lib\MySql.Data.dll
+		lib\MySql.Data.Entity.dll = lib\MySql.Data.Entity.dll
+		lib\MySql.Web.dll = lib\MySql.Web.dll
+		lib\ProjectBase.Utils.dll = lib\ProjectBase.Utils.dll
+		lib\ProjectBase.Utils.XmlSerializers.dll = lib\ProjectBase.Utils.XmlSerializers.dll
+		lib\xVal.dll = lib\xVal.dll
+		lib\yuicompressor-2.4.2.jar = lib\yuicompressor-2.4.2.jar
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sharp-architecture", "sharp-architecture", "{92FD4F61-E7DB-4E4C-B9B8-1817FD910536}"
+	ProjectSection(SolutionItems) = preProject
+		lib\sharp-architecture\Antlr3.Runtime.dll = lib\sharp-architecture\Antlr3.Runtime.dll
+		lib\sharp-architecture\Castle.Core.dll = lib\sharp-architecture\Castle.Core.dll
+		lib\sharp-architecture\Castle.Core.xml = lib\sharp-architecture\Castle.Core.xml
+		lib\sharp-architecture\Castle.DynamicProxy2.dll = lib\sharp-architecture\Castle.DynamicProxy2.dll
+		lib\sharp-architecture\Castle.DynamicProxy2.xml = lib\sharp-architecture\Castle.DynamicProxy2.xml
+		lib\sharp-architecture\Castle.MicroKernel.dll = lib\sharp-architecture\Castle.MicroKernel.dll
+		lib\sharp-architecture\Castle.MicroKernel.xml = lib\sharp-architecture\Castle.MicroKernel.xml
+		lib\sharp-architecture\Castle.Services.Logging.Log4netIntegration.dll = lib\sharp-architecture\Castle.Services.Logging.Log4netIntegration.dll
+		lib\sharp-architecture\Castle.Services.Logging.Log4netIntegration.xml = lib\sharp-architecture\Castle.Services.Logging.Log4netIntegration.xml
+		lib\sharp-architecture\Castle.Windsor.dll = lib\sharp-architecture\Castle.Windsor.dll
+		lib\sharp-architecture\Castle.Windsor.xml = lib\sharp-architecture\Castle.Windsor.xml
+		lib\sharp-architecture\CommonServiceLocator.WindsorAdapter.dll = lib\sharp-architecture\CommonServiceLocator.WindsorAdapter.dll
+		lib\sharp-architecture\FluentNHibernate.dll = lib\sharp-architecture\FluentNHibernate.dll
+		lib\sharp-architecture\FluentNHibernate.XML = lib\sharp-architecture\FluentNHibernate.XML
+		lib\sharp-architecture\Gallio.dll = lib\sharp-architecture\Gallio.dll
+		lib\sharp-architecture\Iesi.Collections.dll = lib\sharp-architecture\Iesi.Collections.dll
+		lib\sharp-architecture\Iesi.Collections.license.txt = lib\sharp-architecture\Iesi.Collections.license.txt
+		lib\sharp-architecture\Iesi.Collections.xml = lib\sharp-architecture\Iesi.Collections.xml
+		lib\sharp-architecture\Inflector.Net.dll = lib\sharp-architecture\Inflector.Net.dll
+		lib\sharp-architecture\log4net.dll = lib\sharp-architecture\log4net.dll
+		lib\sharp-architecture\log4net.license.txt = lib\sharp-architecture\log4net.license.txt
+		lib\sharp-architecture\log4net.xml = lib\sharp-architecture\log4net.xml
+		lib\sharp-architecture\MbUnit.dll = lib\sharp-architecture\MbUnit.dll
+		lib\sharp-architecture\Microsoft.Practices.ServiceLocation.dll = lib\sharp-architecture\Microsoft.Practices.ServiceLocation.dll
+		lib\sharp-architecture\Microsoft.Web.Mvc.dll = lib\sharp-architecture\Microsoft.Web.Mvc.dll
+		lib\sharp-architecture\Moq.dll = lib\sharp-architecture\Moq.dll
+		lib\sharp-architecture\Moq.xml = lib\sharp-architecture\Moq.xml
+		lib\sharp-architecture\MvcContrib.Castle.dll = lib\sharp-architecture\MvcContrib.Castle.dll
+		lib\sharp-architecture\MvcContrib.Castle.xml = lib\sharp-architecture\MvcContrib.Castle.xml
+		lib\sharp-architecture\MvcContrib.dll = lib\sharp-architecture\MvcContrib.dll
+		lib\sharp-architecture\MvcContrib.FluentHtml.dll = lib\sharp-architecture\MvcContrib.FluentHtml.dll
+		lib\sharp-architecture\MvcContrib.FluentHtml.xml = lib\sharp-architecture\MvcContrib.FluentHtml.xml
+		lib\sharp-architecture\MvcContrib.TestHelper.dll = lib\sharp-architecture\MvcContrib.TestHelper.dll
+		lib\sharp-architecture\MvcContrib.TestHelper.XML = lib\sharp-architecture\MvcContrib.TestHelper.XML
+		lib\sharp-architecture\MvcContrib.XML = lib\sharp-architecture\MvcContrib.XML
+		lib\sharp-architecture\Newtonsoft.Json.dll = lib\sharp-architecture\Newtonsoft.Json.dll
+		lib\sharp-architecture\Newtonsoft.Json.xml = lib\sharp-architecture\Newtonsoft.Json.xml
+		lib\sharp-architecture\nhibernate-configuration.xsd = lib\sharp-architecture\nhibernate-configuration.xsd
+		lib\sharp-architecture\nhibernate-mapping.xsd = lib\sharp-architecture\nhibernate-mapping.xsd
+		lib\sharp-architecture\NHibernate.ByteCode.Castle.dll = lib\sharp-architecture\NHibernate.ByteCode.Castle.dll
+		lib\sharp-architecture\NHibernate.ByteCode.Castle.xml = lib\sharp-architecture\NHibernate.ByteCode.Castle.xml
+		lib\sharp-architecture\NHibernate.dll = lib\sharp-architecture\NHibernate.dll
+		lib\sharp-architecture\NHibernate.license.txt = lib\sharp-architecture\NHibernate.license.txt
+		lib\sharp-architecture\NHibernate.Linq.dll = lib\sharp-architecture\NHibernate.Linq.dll
+		lib\sharp-architecture\NHibernate.Validator.dll = lib\sharp-architecture\NHibernate.Validator.dll
+		lib\sharp-architecture\NHibernate.Validator.xml = lib\sharp-architecture\NHibernate.Validator.xml
+		lib\sharp-architecture\NHibernate.xml = lib\sharp-architecture\NHibernate.xml
+		lib\sharp-architecture\nunit.framework.dll = lib\sharp-architecture\nunit.framework.dll
+		lib\sharp-architecture\nunit.framework.xml = lib\sharp-architecture\nunit.framework.xml
+		lib\sharp-architecture\Rhino.Mocks.dll = lib\sharp-architecture\Rhino.Mocks.dll
+		lib\sharp-architecture\Rhino.Mocks.xml = lib\sharp-architecture\Rhino.Mocks.xml
+		lib\sharp-architecture\SharpArch.dll = lib\sharp-architecture\SharpArch.dll
+		lib\sharp-architecture\SharpArch.pdb = lib\sharp-architecture\SharpArch.pdb
+		lib\sharp-architecture\SharpArchApplicationWizard.dll = lib\sharp-architecture\SharpArchApplicationWizard.dll
+		lib\sharp-architecture\SharpArchApplicationWizard.pdb = lib\sharp-architecture\SharpArchApplicationWizard.pdb
+		lib\sharp-architecture\System.Data.SQLite.DLL = lib\sharp-architecture\System.Data.SQLite.DLL
+		lib\sharp-architecture\System.Web.Abstractions.dll = lib\sharp-architecture\System.Web.Abstractions.dll
+		lib\sharp-architecture\System.Web.Mvc.dll = lib\sharp-architecture\System.Web.Mvc.dll
+		lib\sharp-architecture\System.Web.Mvc.xml = lib\sharp-architecture\System.Web.Mvc.xml
+		lib\sharp-architecture\System.Web.Routing.dll = lib\sharp-architecture\System.Web.Routing.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "google-data", "google-data", "{9231A8BA-65F4-4B56-B8F2-B365037277D7}"
+	ProjectSection(SolutionItems) = preProject
+		lib\google-data\Google.GData.AccessControl.dll = lib\google-data\Google.GData.AccessControl.dll
+		lib\google-data\Google.GData.Apps.dll = lib\google-data\Google.GData.Apps.dll
+		lib\google-data\Google.GData.Calendar.dll = lib\google-data\Google.GData.Calendar.dll
+		lib\google-data\Google.GData.Client.dll = lib\google-data\Google.GData.Client.dll
+		lib\google-data\Google.GData.CodeSearch.dll = lib\google-data\Google.GData.CodeSearch.dll
+		lib\google-data\Google.GData.Contacts.dll = lib\google-data\Google.GData.Contacts.dll
+		lib\google-data\Google.GData.Documents.dll = lib\google-data\Google.GData.Documents.dll
+		lib\google-data\Google.GData.Extensions.dll = lib\google-data\Google.GData.Extensions.dll
+		lib\google-data\Google.GData.GoogleBase.dll = lib\google-data\Google.GData.GoogleBase.dll
+		lib\google-data\Google.GData.Health.dll = lib\google-data\Google.GData.Health.dll
+		lib\google-data\Google.GData.Photos.dll = lib\google-data\Google.GData.Photos.dll
+		lib\google-data\Google.GData.Spreadsheets.dll = lib\google-data\Google.GData.Spreadsheets.dll
+		lib\google-data\Google.GData.YouTube.dll = lib\google-data\Google.GData.YouTube.dll
+		lib\google-data\zlib.x86.dll = lib\google-data\zlib.x86.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "oauth-net", "oauth-net", "{022EE87C-6681-4866-9109-BF887EA287B5}"
+	ProjectSection(SolutionItems) = preProject
+		lib\oauth-net\HtmlAgilityPack.dll = lib\oauth-net\HtmlAgilityPack.dll
+		lib\oauth-net\Microsoft.Practices.ServiceLocation.dll = lib\oauth-net\Microsoft.Practices.ServiceLocation.dll
+		lib\oauth-net\OAuth.Net.Common.dll = lib\oauth-net\OAuth.Net.Common.dll
+		lib\oauth-net\OAuth.Net.Components.dll = lib\oauth-net\OAuth.Net.Components.dll
+		lib\oauth-net\OAuth.Net.Consumer.dll = lib\oauth-net\OAuth.Net.Consumer.dll
+		lib\oauth-net\OAuth.Net.ServiceProvider.dll = lib\oauth-net\OAuth.Net.ServiceProvider.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "app\TestConsole\TestConsole.csproj", "{1E875995-0BA4-4C84-9FE6-E6A80C0410EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.ServiceHost", "app\FashionAde.ServiceHost\FashionAde.ServiceHost.csproj", "{E04A9340-644C-46B4-B2DE-46469796A261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Services", "app\FashionAde.Services\FashionAde.Services.csproj", "{A720D50E-DAA9-4B1F-B7F3-58A14B8427A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.OutfitUpdaterImportation", "FashionAde.OutfitUpdaterImportation\FashionAde.OutfitUpdaterImportation.csproj", "{765D4A13-603D-4C24-A68F-0E040EB855B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Utils", "app\FashionAde.Utils\FashionAde.Utils.csproj", "{06B4EBD9-5FFE-451F-8022-D84868B470E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.Web.Common", "FashionAde.Web.Common\FashionAde.Web.Common.csproj", "{982FFF44-06D3-40A9-8B81-71B8A6EDA58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.WebAdmin", "FashionAde.WebAdmin\FashionAde.WebAdmin.csproj", "{4DC48987-6BF6-446D-9FDC-C1A19C626B67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.WebAdmin.Controllers", "FashionAde.WebAdmin.Controllers\FashionAde.WebAdmin.Controllers.csproj", "{0677E771-EC31-4F40-9354-80E07918B578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactProvider", "ContactProvider\ContactProvider.csproj", "{588AB897-9D3C-47E9-BE9C-6D9154372084}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{C5671384-5CAD-4C64-8160-FA4AFB4269E0}"
+	ProjectSection(SolutionItems) = preProject
+		deploy.build = deploy.build
+		go-prd.bat = go-prd.bat
+		go-qa.bat = go-qa.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nant-contrib", "nant-contrib", "{B4A66BD6-CDD6-4DA4-A697-A1EB2E783767}"
+	ProjectSection(SolutionItems) = preProject
+		lib\nant-contrib\CollectionGen.dll = lib\nant-contrib\CollectionGen.dll
+		lib\nant-contrib\Interop.MsmMergeTypeLib.dll = lib\nant-contrib\Interop.MsmMergeTypeLib.dll
+		lib\nant-contrib\Interop.StarTeam.dll = lib\nant-contrib\Interop.StarTeam.dll
+		lib\nant-contrib\Interop.WindowsInstaller.dll = lib\nant-contrib\Interop.WindowsInstaller.dll
+		lib\nant-contrib\log4net.dll = lib\nant-contrib\log4net.dll
+		lib\nant-contrib\MSITaskErrors.mst = lib\nant-contrib\MSITaskErrors.mst
+		lib\nant-contrib\MSITaskTemplate.msi = lib\nant-contrib\MSITaskTemplate.msi
+		lib\nant-contrib\MSMTaskErrors.mst = lib\nant-contrib\MSMTaskErrors.mst
+		lib\nant-contrib\MSMTaskTemplate.msm = lib\nant-contrib\MSMTaskTemplate.msm
+		lib\nant-contrib\NAnt.Contrib.Tasks.dll = lib\nant-contrib\NAnt.Contrib.Tasks.dll
+		lib\nant-contrib\NAnt.Contrib.Tasks.xml = lib\nant-contrib\NAnt.Contrib.Tasks.xml
+		lib\nant-contrib\NAnt.Core.dll = lib\nant-contrib\NAnt.Core.dll
+		lib\nant-contrib\NAnt.Core.xml = lib\nant-contrib\NAnt.Core.xml
+		lib\nant-contrib\NAnt.DotNetTasks.dll = lib\nant-contrib\NAnt.DotNetTasks.dll
+		lib\nant-contrib\NAnt.DotNetTasks.xml = lib\nant-contrib\NAnt.DotNetTasks.xml
+		lib\nant-contrib\Nybble.NAntTasks.dll = lib\nant-contrib\Nybble.NAntTasks.dll
+		lib\nant-contrib\Nybble.NAntTasks.pdb = lib\nant-contrib\Nybble.NAntTasks.pdb
+		lib\nant-contrib\SLiNgshoT.Core.dll = lib\nant-contrib\SLiNgshoT.Core.dll
+		lib\nant-contrib\SLiNgshoT.exe = lib\nant-contrib\SLiNgshoT.exe
+		lib\nant-contrib\SourceSafe.Interop.dll = lib\nant-contrib\SourceSafe.Interop.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.TestsUsingDevDatabase", "tests\FashionAde.TestsUsingDevDatabase\FashionAde.TestsUsingDevDatabase.csproj", "{87B13AD4-517F-4145-92FD-E99640FBB6E7}"
+EndProject
+Project("{4F174C21-8C12-11D0-8340-0000F80270F8}") = "FashionAde.Scripts", "db\FashionAde.Scripts\FashionAde.Scripts.dbp", "{6A05A2A2-C74E-4BF4-B93B-1D54B692E698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionAde.OutfitUpdaterExecutor", "app\FashionAde.OutfitUpdaterExecutor\FashionAde.OutfitUpdaterExecutor.csproj", "{4D73BAEF-2F16-4E2D-84E8-2D7BAC32CC1C}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26375851-E958-47FE-B328-B7CF26DFD684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26375851-E958-47FE-B328-B7CF26DFD684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26375851-E958-47FE-B328-B7CF26DFD684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26375851-E958-47FE-B328-B7CF26DFD684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E9C4A6-6086-4D9E-8D27-41D4159CF95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E9C4A6-6086-4D9E-8D27-41D4159CF95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E9C4A6-6086-4D9E-8D27-41D4159CF95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E9C4A6-6086-4D9E-8D27-41D4159CF95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A214C0E-B4F6-4F91-9878-2BBC34341C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A214C0E-B4F6-4F91-9878-2BBC34341C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A214C0E-B4F6-4F91-9878-2BBC34341C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A214C0E-B4F6-4F91-9878-2BBC34341C66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6138F54F-859E-4CA0-9559-4A8D5193ECFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6138F54F-859E-4CA0-9559-4A8D5193ECFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6138F54F-859E-4CA0-9559-4A8D5193ECFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6138F54F-859E-4CA0-9559-4A8D5193ECFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3377EC9-8721-4C15-95AF-B974D36873B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3377EC9-8721-4C15-95AF-B974D36873B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3377EC9-8721-4C15-95AF-B974D36873B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3377EC9-8721-4C15-95AF-B974D36873B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E875995-0BA4-4C84-9FE6-E6A80C0410EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E875995-0BA4-4C84-9FE6-E6A80C0410EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E875995-0BA4-4C84-9FE6-E6A80C0410EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04A9340-644C-46B4-B2DE-46469796A261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04A9340-644C-46B4-B2DE-46469796A261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04A9340-644C-46B4-B2DE-46469796A261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04A9340-644C-46B4-B2DE-46469796A261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A720D50E-DAA9-4B1F-B7F3-58A14B8427A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A720D50E-DAA9-4B1F-B7F3-58A14B8427A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A720D50E-DAA9-4B1F-B7F3-58A14B8427A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A720D50E-DAA9-4B1F-B7F3-58A14B8427A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765D4A13-603D-4C24-A68F-0E040EB855B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765D4A13-603D-4C24-A68F-0E040EB855B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765D4A13-603D-4C24-A68F-0E040EB855B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765D4A13-603D-4C24-A68F-0E040EB855B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B4EBD9-5FFE-451F-8022-D84868B470E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B4EBD9-5FFE-451F-8022-D84868B470E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B4EBD9-5FFE-451F-8022-D84868B470E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B4EBD9-5FFE-451F-8022-D84868B470E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982FFF44-06D3-40A9-8B81-71B8A6EDA58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982FFF44-06D3-40A9-8B81-71B8A6EDA58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982FFF44-06D3-40A9-8B81-71B8A6EDA58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982FFF44-06D3-40A9-8B81-71B8A6EDA58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC48987-6BF6-446D-9FDC-C1A19C626B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC48987-6BF6-446D-9FDC-C1A19C626B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC48987-6BF6-446D-9FDC-C1A19C626B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC48987-6BF6-446D-9FDC-C1A19C626B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0677E771-EC31-4F40-9354-80E07918B578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0677E771-EC31-4F40-9354-80E07918B578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0677E771-EC31-4F40-9354-80E07918B578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0677E771-EC31-4F40-9354-80E07918B578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588AB897-9D3C-47E9-BE9C-6D9154372084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588AB897-9D3C-47E9-BE9C-6D9154372084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588AB897-9D3C-47E9-BE9C-6D9154372084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588AB897-9D3C-47E9-BE9C-6D9154372084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B13AD4-517F-4145-92FD-E99640FBB6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B13AD4-517F-4145-92FD-E99640FBB6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B13AD4-517F-4145-92FD-E99640FBB6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B13AD4-517F-4145-92FD-E99640FBB6E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D73BAEF-2F16-4E2D-84E8-2D7BAC32CC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D73BAEF-2F16-4E2D-84E8-2D7BAC32CC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D73BAEF-2F16-4E2D-84E8-2D7BAC32CC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D73BAEF-2F16-4E2D-84E8-2D7BAC32CC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92FD4F61-E7DB-4E4C-B9B8-1817FD910536} = {939A06CD-2830-48B4-BD00-A3CCF77C797A}
+		{9231A8BA-65F4-4B56-B8F2-B365037277D7} = {939A06CD-2830-48B4-BD00-A3CCF77C797A}
+		{022EE87C-6681-4866-9109-BF887EA287B5} = {939A06CD-2830-48B4-BD00-A3CCF77C797A}
+		{B4A66BD6-CDD6-4DA4-A697-A1EB2E783767} = {939A06CD-2830-48B4-BD00-A3CCF77C797A}
+	EndGlobalSection
+EndGlobal

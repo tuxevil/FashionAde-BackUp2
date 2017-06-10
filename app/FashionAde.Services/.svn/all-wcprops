@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nybble/!svn/ver/4924/FashionAde/trunk/app/FashionAde.Services
+END
+FashionAde.Services.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Services/FashionAde.Services.csproj
+END
+OutfitEngineProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nybble/!svn/ver/4924/FashionAde/trunk/app/FashionAde.Services/OutfitEngineProcessor.cs
+END
+OutfitUpdaterService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4869/FashionAde/trunk/app/FashionAde.Services/OutfitUpdaterService.cs
+END
+OutfitEngineService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4750/FashionAde/trunk/app/FashionAde.Services/OutfitEngineService.cs
+END
+IOutfitEngineProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/4237/FashionAde/trunk/app/FashionAde.Services/IOutfitEngineProcessor.cs
+END
+IOutfitUpdaterService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nybble/!svn/ver/4635/FashionAde/trunk/app/FashionAde.Services/IOutfitUpdaterService.cs
+END
+IOutfitEngineService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4589/FashionAde/trunk/app/FashionAde.Services/IOutfitEngineService.cs
+END

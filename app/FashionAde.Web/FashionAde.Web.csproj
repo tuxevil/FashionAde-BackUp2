@@ -1,0 +1,859 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3377EC9-8721-4C15-95AF-B974D36873B2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionAde.Web</RootNamespace>
+    <AssemblyName>FashionAde.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.1.0.39271, Culture=neutral, PublicKeyToken=3a9cab8f8d22bfb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator.WindsorAdapter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\CommonServiceLocator.WindsorAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib, Version=0.0.1.913, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib.Castle, Version=0.0.1.174, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\MvcContrib.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib.FluentHtml, Version=1.0.0.99, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\MvcContrib.FluentHtml.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\MySql.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.0.3001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.1001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator, Version=1.2.0.3001, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpArch, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\SharpArch.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\System.Web.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\System.Web.Routing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="xVal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f8fbed92c68c4006, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\xVal.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="NHibernate.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\DebugFormSubmission.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FashionAde.ApplicationServices\FashionAde.ApplicationServices.csproj">
+      <Project>{08E9C4A6-6086-4D9E-8D27-41D4159CF95F}</Project>
+      <Name>FashionAde.ApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionAde.Utils\FashionAde.Utils.csproj">
+      <Project>{06B4EBD9-5FFE-451F-8022-D84868B470E1}</Project>
+      <Name>FashionAde.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FashionAde.Web.Common\FashionAde.Web.Common.csproj">
+      <Project>{982FFF44-06D3-40A9-8B81-71B8A6EDA58F}</Project>
+      <Name>FashionAde.Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionAde.Web.Controllers\FashionAde.Web.Controllers.csproj">
+      <Project>{1A214C0E-B4F6-4F91-9878-2BBC34341C66}</Project>
+      <Name>FashionAde.Web.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionAde.Core\FashionAde.Core.csproj">
+      <Project>{26375851-E958-47FE-B328-B7CF26DFD684}</Project>
+      <Name>FashionAde.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionAde.Data\FashionAde.Data.csproj">
+      <Project>{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}</Project>
+      <Name>FashionAde.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="commingsoon.htm" />
+    <Content Include="res\EventTypes\eventType1.gif" />
+    <Content Include="res\mail\confirmrating_body.htm" />
+    <Content Include="res\mail\confirmrating_subject.htm" />
+    <Content Include="res\mail\confirmrating_title.htm" />
+    <Content Include="res\mail\invitation_with_code_title.htm" />
+    <Content Include="res\mail\invitation_with_code_subject.htm" />
+    <Content Include="res\mail\invitation_with_code_body.htm" />
+    <Content Include="res\mail\feedback_body.htm" />
+    <Content Include="res\mail\feedback_subject.htm" />
+    <Content Include="res\mail\feedback_title.htm" />
+    <Content Include="res\mail\copyinvite2rate_body.htm" />
+    <Content Include="res\mail\copyinvite2rate_subject.htm" />
+    <Content Include="res\mail\copyinvite2rate_title.htm" />
+    <Content Include="res\Rating\1.jpg" />
+    <Content Include="res\Rating\2.jpg" />
+    <Content Include="res\Rating\3.jpg" />
+    <Content Include="res\Rating\4.jpg" />
+    <Content Include="res\Rating\5.jpg" />
+    <Content Include="static\css\all.css" />
+    <None Include="static\css\jquery.autocomplete.css" />
+    <None Include="static\css\jquery.Jcrop.css" />
+    <None Include="static\css\jquery.rating.css" />
+    <None Include="static\css\jquery-ui-1.7.2.custom.css" />
+    <None Include="static\css\site.css" />
+    <None Include="static\css\scrollable-horizontal.css" />
+    <None Include="static\css\scrollable-buttons.css" />
+    <None Include="static\css\tabs.css" />
+    <Content Include="res\BrandSets\brandset1.gif" />
+    <Content Include="res\BrandSets\brandset2.gif" />
+    <Content Include="res\BrandSets\brandset3.gif" />
+    <Content Include="res\BrandSets\brandset4.gif" />
+    <Content Include="res\BrandSets\brandset5.gif" />
+    <Content Include="res\BrandSets\brandset6.gif" />
+    <Content Include="res\BrandSets\brandset7.gif" />
+    <Content Include="res\BrandSets\brandset8.gif" />
+    <Content Include="res\FashionFlavors\shape_7_small.gif" />
+    <Content Include="res\FashionFlavors\shape_1_small.gif" />
+    <Content Include="res\FashionFlavors\shape_3_small.gif" />
+    <Content Include="res\FashionFlavors\shape_6_small.gif" />
+    <Content Include="res\FashionFlavors\shape_5_small.gif" />
+    <Content Include="res\FashionFlavors\shape_2_small.gif" />
+    <Content Include="res\FashionFlavors\shape_4_small.gif" />
+    <Content Include="res\FashionFlavors\shape_8_small.gif" />
+    <Content Include="res\Garments\100101_98.png" />
+    <Content Include="res\Garments\100101_c2.png" />
+    <Content Include="res\Garments\100101_c3.png" />
+    <Content Include="res\Garments\100101_c4.png" />
+    <Content Include="res\Garments\100101_c5.png" />
+    <Content Include="res\Garments\100101_c6.png" />
+    <Content Include="res\Garments\100101_c7.png" />
+    <Content Include="res\Garments\100101_c8.png" />
+    <Content Include="res\Garments\100101_c9.png" />
+    <Content Include="res\Garments\100101_c10.png" />
+    <Content Include="res\Garments\100101_c11.png" />
+    <Content Include="res\Garments\100101_c12.png" />
+    <Content Include="res\Garments\100101_c13.png" />
+    <Content Include="res\Garments\100101_c14.png" />
+    <Content Include="res\Garments\100101_c15.png" />
+    <Content Include="res\Garments\100101_c16.png" />
+    <Content Include="res\Garments\100101_c17.png" />
+    <Content Include="res\Garments\100101_c18.png" />
+    <Content Include="res\Garments\100101_c19.png" />
+    <Content Include="res\Garments\100101_c20.png" />
+    <Content Include="res\Garments\100101_c21.png" />
+    <Content Include="res\Garments\100101_c22.png" />
+    <Content Include="res\Garments\100101_c23.png" />
+    <Content Include="res\Garments\100101_c24.png" />
+    <Content Include="res\Garments\100101_c25.png" />
+    <Content Include="res\Garments\100101_c26.png" />
+    <Content Include="res\Garments\100101_c27.png" />
+    <Content Include="res\Garments\100101_c28.png" />
+    <Content Include="res\Garments\100101_c29.png" />
+    <Content Include="res\Garments\100101_c30.png" />
+    <Content Include="res\Garments\100101_c31.png" />
+    <Content Include="res\Garments\100101_c32.png" />
+    <Content Include="res\Garments\100101_c33.png" />
+    <Content Include="res\Garments\100101_c34.png" />
+    <Content Include="res\Garments\100101_c35.png" />
+    <Content Include="res\Garments\100101_c36.png" />
+    <Content Include="res\Garments\100101_c37.png" />
+    <Content Include="res\Garments\100101_c38.png" />
+    <Content Include="res\Garments\100101_c39.png" />
+    <Content Include="res\Garments\100101_c40.png" />
+    <Content Include="res\Garments\100101_c41.png" />
+    <Content Include="res\Garments\100101_c42.png" />
+    <Content Include="res\Garments\100101_c43.png" />
+    <Content Include="res\Garments\100101_c44.png" />
+    <Content Include="res\Garments\100105_98.png" />
+    <Content Include="res\Garments\100106_98.png" />
+    <Content Include="res\Garments\100107_98.png" />
+    <Content Include="res\Garments\100108_98.png" />
+    <Content Include="res\Garments\100109_98.png" />
+    <Content Include="res\Garments\100112_98.png" />
+    <Content Include="res\Garments\100113_98.png" />
+    <Content Include="res\Garments\100114_98.png" />
+    <Content Include="res\Garments\100116_98.png" />
+    <Content Include="res\Garments\100117_98.png" />
+    <Content Include="res\Garments\100118_98.png" />
+    <Content Include="res\Garments\100119_98.png" />
+    <Content Include="res\Garments\100120_98.png" />
+    <Content Include="res\Garments\100122_98.png" />
+    <Content Include="res\Garments\111101_98.png" />
+    <Content Include="res\Garments\111102_98.png" />
+    <Content Include="res\Garments\111103_98.png" />
+    <Content Include="res\Garments\111104_98.png" />
+    <Content Include="res\Garments\111105_98.png" />
+    <Content Include="res\Garments\111106_98.png" />
+    <Content Include="res\Garments\111107_98.png" />
+    <Content Include="res\Garments\111108_98.png" />
+    <Content Include="res\Garments\111109_98.png" />
+    <Content Include="res\Garments\111110_98.png" />
+    <Content Include="res\Garments\111111_98.png" />
+    <Content Include="res\Garments\111112_98.png" />
+    <Content Include="res\Garments\111113_98.png" />
+    <Content Include="res\Garments\111114_98.png" />
+    <Content Include="res\Garments\111115_98.png" />
+    <Content Include="res\Garments\111116_98.png" />
+    <Content Include="res\Garments\111117_98.png" />
+    <Content Include="res\Garments\111118_98.png" />
+    <Content Include="res\Garments\111119_98.png" />
+    <Content Include="res\Garments\111121_98.png" />
+    <Content Include="res\Garments\111122_98.png" />
+    <Content Include="res\Garments\111124_98.png" />
+    <Content Include="res\Garments\200101_98.png" />
+    <Content Include="res\Garments\200102_98.png" />
+    <Content Include="res\Garments\200104_98.png" />
+    <Content Include="res\Garments\200107_98.png" />
+    <Content Include="res\Garments\200108_98.png" />
+    <Content Include="res\Garments\200109_98.png" />
+    <Content Include="res\Garments\200110_98.png" />
+    <Content Include="res\Garments\200111_98.png" />
+    <Content Include="res\Garments\222101_98.png" />
+    <Content Include="res\Garments\222102_98.png" />
+    <Content Include="res\Garments\222104_98.png" />
+    <Content Include="res\Garments\222105_98.png" />
+    <Content Include="res\Garments\222107_98.png" />
+    <Content Include="res\Garments\222109_98.png" />
+    <Content Include="res\Garments\222110_98.png" />
+    <Content Include="res\Garments\222112_98.png" />
+    <Content Include="res\Garments\300102_98.png" />
+    <Content Include="res\Garments\300103_98.png" />
+    <Content Include="res\Garments\300104_98.png" />
+    <Content Include="res\Garments\300106_98.png" />
+    <Content Include="res\Garments\300107_98.png" />
+    <Content Include="res\Garments\333101_98.png" />
+    <Content Include="res\Garments\333102_98.png" />
+    <Content Include="res\Garments\333103_98.png" />
+    <Content Include="res\Garments\333104_98.png" />
+    <Content Include="res\Garments\400101_98.png" />
+    <Content Include="res\Garments\400103_98.png" />
+    <Content Include="res\Garments\400104_98.png" />
+    <Content Include="res\Garments\400105_98.png" />
+    <Content Include="res\Garments\400106_98.png" />
+    <Content Include="res\Garments\400107_98.png" />
+    <Content Include="res\Garments\400108_98.png" />
+    <Content Include="res\Garments\400109_98.png" />
+    <Content Include="res\Garments\400111_98.png" />
+    <Content Include="res\Garments\400112_98.png" />
+    <Content Include="res\Garments\400116_98.png" />
+    <Content Include="res\Garments\400117_98.png" />
+    <Content Include="res\Garments\444101_98.png" />
+    <Content Include="res\Garments\444102_98.png" />
+    <Content Include="res\Garments\500101_98.png" />
+    <Content Include="res\Garments\500102_98.png" />
+    <Content Include="res\Garments\500104_98.png" />
+    <Content Include="res\Garments\500105_98.png" />
+    <Content Include="res\Garments\500107_98.png" />
+    <Content Include="res\Garments\500108_98.png" />
+    <Content Include="res\Garments\500109_98.png" />
+    <Content Include="res\Garments\500110_98.png" />
+    <Content Include="res\Garments\500111_98.png" />
+    <Content Include="res\Garments\500112_98.png" />
+    <Content Include="res\Garments\500114_98.png" />
+    <Content Include="res\Garments\500115_98.png" />
+    <Content Include="res\Garments\500116_98.png" />
+    <Content Include="res\Garments\500118_98.png" />
+    <Content Include="res\Garments\500119_98.png" />
+    <Content Include="res\Garments\500120_98.png" />
+    <Content Include="res\Garments\500121_98.png" />
+    <Content Include="res\Garments\555101_98.png" />
+    <Content Include="res\Garments\555104_98.png" />
+    <Content Include="res\Garments\555106_98.png" />
+    <Content Include="res\Garments\555108_98.png" />
+    <Content Include="res\Garments\600101_98.png" />
+    <Content Include="res\Garments\600102_98.png" />
+    <Content Include="res\Garments\600103_98.png" />
+    <Content Include="res\Garments\600104_98.png" />
+    <Content Include="res\Garments\600105_98.png" />
+    <Content Include="res\Garments\600106_98.png" />
+    <Content Include="res\Garments\600108_98.png" />
+    <Content Include="res\Garments\600111_98.png" />
+    <Content Include="res\Garments\600114_98.png" />
+    <Content Include="res\Garments\600115_98.png" />
+    <Content Include="res\Garments\666101_98.png" />
+    <Content Include="res\Garments\666102_98.png" />
+    <Content Include="res\Garments\666103_98.png" />
+    <Content Include="res\Garments\666104_98.png" />
+    <Content Include="res\Garments\666105_98.png" />
+    <Content Include="res\Garments\700101_98.png" />
+    <Content Include="res\Garments\700102_98.png" />
+    <Content Include="res\Garments\700103_98.png" />
+    <Content Include="res\Garments\700104_98.png" />
+    <Content Include="res\Garments\700105_98.png" />
+    <Content Include="res\Garments\700107_98.png" />
+    <Content Include="res\Garments\700109_98.png" />
+    <Content Include="res\Garments\777102_98.png" />
+    <Content Include="res\Garments\777103_98.png" />
+    <Content Include="res\Garments\777104_98.png" />
+    <Content Include="res\Garments\777105_98.png" />
+    <Content Include="res\Garments\777106_98.png" />
+    <Content Include="res\Garments\777108_98.png" />
+    <Content Include="res\Garments\777109_98.png" />
+    <Content Include="res\Garments\800101_98.png" />
+    <Content Include="res\Garments\800102_98.png" />
+    <Content Include="res\Garments\800103_98.png" />
+    <Content Include="res\Garments\800104_98.png" />
+    <Content Include="res\Garments\800107_98.png" />
+    <Content Include="res\Garments\800108_98.png" />
+    <Content Include="res\Garments\800110_98.png" />
+    <Content Include="res\Garments\800111_98.png" />
+    <Content Include="res\Garments\900101_98.png" />
+    <Content Include="res\Garments\900105_98.png" />
+    <Content Include="res\Garments\900107_98.png" />
+    <Content Include="res\Garments\900109_98.png" />
+    <Content Include="res\Garments\900110_98.png" />
+    <Content Include="res\Garments\900111_98.png" />
+    <Content Include="res\Garments\900112_98.png" />
+    <Content Include="res\Garments\900114_98.png" />
+    <Content Include="res\Garments\900115_98.png" />
+    <Content Include="res\Garments\900119_98.png" />
+    <Content Include="res\Garments\900120_98.png" />
+    <Content Include="res\Garments\900122_98.png" />
+    <Content Include="res\Garments\900123_98.png" />
+    <Content Include="res\Garments\900124_98.png" />
+    <Content Include="res\Garments\900127_98.png" />
+    <Content Include="res\Garments\900128_98.png" />
+    <Content Include="res\Garments\900129_98.png" />
+    <Content Include="res\Garments\900130_98.png" />
+    <Content Include="res\Garments\900132_98.png" />
+    <Content Include="res\Garments\garment1.gif" />
+    <Content Include="res\Garments\garment10.gif" />
+    <Content Include="res\Garments\garment11.gif" />
+    <Content Include="res\Garments\garment12.gif" />
+    <Content Include="res\Garments\garment13.gif" />
+    <Content Include="res\Garments\garment14.gif" />
+    <Content Include="res\Garments\garment15.gif" />
+    <Content Include="res\Garments\garment16.gif" />
+    <Content Include="res\Garments\garment17.gif" />
+    <Content Include="res\Garments\garment18.gif" />
+    <Content Include="res\Garments\garment19.gif" />
+    <Content Include="res\Garments\garment2.gif" />
+    <Content Include="res\Garments\garment20.gif" />
+    <Content Include="res\Garments\garment21.gif" />
+    <Content Include="res\Garments\garment22.gif" />
+    <Content Include="res\Garments\garment23.gif" />
+    <Content Include="res\Garments\garment24.gif" />
+    <Content Include="res\Garments\garment25.gif" />
+    <Content Include="res\Garments\garment26.gif" />
+    <Content Include="res\Garments\garment27.gif" />
+    <Content Include="res\Garments\garment28.gif" />
+    <Content Include="res\Garments\garment29.gif" />
+    <Content Include="res\Garments\garment3.gif" />
+    <Content Include="res\Garments\garment30.gif" />
+    <Content Include="res\Garments\garment4.gif" />
+    <Content Include="res\Garments\garment5.gif" />
+    <Content Include="res\Garments\garment6.gif" />
+    <Content Include="res\Garments\garment7.gif" />
+    <Content Include="res\Garments\garment8.gif" />
+    <Content Include="res\Garments\garment9.gif" />
+    <Content Include="res\mail\confirmemail_body.htm" />
+    <Content Include="res\mail\confirmemail_subject.htm" />
+    <Content Include="res\mail\confirmemail_title.htm" />
+    <Content Include="res\mail\approvedmail_body.htm" />
+    <Content Include="res\mail\approvedmail_subject.htm" />
+    <Content Include="res\mail\approvedmail_title.htm" />
+    <Content Include="res\mail\acceptinvite_body.htm" />
+    <Content Include="res\mail\acceptinvite_subject.htm" />
+    <Content Include="res\mail\acceptinvite_title.htm" />
+    <Content Include="res\mail\invite2rate_subject.htm" />
+    <Content Include="res\mail\invite2rate_title.htm" />
+    <Content Include="res\mail\forgotpassword_body.htm" />
+    <Content Include="res\mail\forgotpassword_subject.htm" />
+    <Content Include="res\mail\forgotpassword_title.htm" />
+    <Content Include="res\mail\invitation_subject.htm" />
+    <Content Include="res\mail\images\azul.gif" />
+    <Content Include="res\mail\images\fdoHeader.gif" />
+    <Content Include="res\mail\images\gris.gif" />
+    <Content Include="res\mail\images\header.gif" />
+    <Content Include="res\mail\invitation_body.htm" />
+    <Content Include="res\mail\invitation_title.htm" />
+    <Content Include="res\mail\invite2rate_body.htm" />
+    <Content Include="res\mail\template.htm" />
+    <Content Include="res\Patterns\AnimalPrint.jpg" />
+    <Content Include="res\Patterns\Argyle.jpg" />
+    <Content Include="res\Patterns\Boucle.jpg" />
+    <Content Include="res\Patterns\Brocade.jpg" />
+    <Content Include="res\Patterns\Cordouroy.jpg" />
+    <Content Include="res\Patterns\Denim.jpg" />
+    <Content Include="res\Patterns\Fleece.jpg" />
+    <Content Include="res\Patterns\FloralSmall.jpg" />
+    <Content Include="res\Patterns\Fur.jpg" />
+    <Content Include="res\Patterns\Gingham.jpg" />
+    <Content Include="res\Patterns\Horizontal Stripes.jpg" />
+    <Content Include="res\Patterns\Houndstooth.jpg" />
+    <Content Include="res\Patterns\Ikat.jpg" />
+    <Content Include="res\Patterns\Knit.jpg" />
+    <Content Include="res\Patterns\Lace.jpg" />
+    <Content Include="res\Patterns\LargeFloral.jpg" />
+    <Content Include="res\Patterns\Paisley.jpg" />
+    <Content Include="res\Patterns\Plaid.jpg" />
+    <Content Include="res\Patterns\PolkaDotSmall.jpg" />
+    <Content Include="res\Patterns\Sequin.jpg" />
+    <Content Include="res\Patterns\Small Floral.jpg" />
+    <Content Include="res\Patterns\Solid.JPG" />
+    <Content Include="res\Patterns\StripePinStripe.jpg" />
+    <Content Include="res\Patterns\StripesBoldWide.jpg" />
+    <Content Include="res\Patterns\Suede.jpg" />
+    <Content Include="res\Patterns\TieDye.jpg" />
+    <Content Include="res\Patterns\Tweed.jpg" />
+    <Content Include="res\Silouhettes\100101.png" />
+    <Content Include="res\Silouhettes\100102.png" />
+    <Content Include="res\Silouhettes\100103.png" />
+    <Content Include="res\Silouhettes\100104.png" />
+    <Content Include="res\Silouhettes\100105.png" />
+    <Content Include="res\Silouhettes\100106.png" />
+    <Content Include="res\Silouhettes\100107.png" />
+    <Content Include="res\Silouhettes\100108.png" />
+    <Content Include="res\Silouhettes\100109.png" />
+    <Content Include="res\Silouhettes\100110.png" />
+    <Content Include="res\Silouhettes\100112.png" />
+    <Content Include="res\Silouhettes\100113.png" />
+    <Content Include="res\Silouhettes\900133.png" />
+    <Content Include="res\StylePhotographs\clothes1.gif" />
+    <Content Include="res\StylePhotographs\clothes2.gif" />
+    <Content Include="res\StylePhotographs\clothes3.gif" />
+    <Content Include="res\StylePhotographs\clothes4.gif" />
+    <Content Include="res\EventTypes\eventType2.gif" />
+    <Content Include="res\EventTypes\eventType3.gif" />
+    <Content Include="res\EventTypes\eventType4.gif" />
+    <Content Include="res\EventTypes\eventType5.gif" />
+    <Content Include="res\StylePhotographs\clothes5.gif" />
+    <Content Include="res\StylePhotographs\clothes6.gif" />
+    <Content Include="res\StylePhotographs\clothes7.gif" />
+    <Content Include="res\StylePhotographs\clothes8.gif" />
+    <Content Include="res\test\100101_98.jpg" />
+    <Content Include="res\test\100105_98.jpg" />
+    <Content Include="res\test\100106_98.jpg" />
+    <Content Include="res\test\100107_98.jpg" />
+    <Content Include="res\test\100108_98.jpg" />
+    <Content Include="res\test\100109_98.jpg" />
+    <Content Include="res\test\100112_98.jpg" />
+    <Content Include="res\test\100113_98.jpg" />
+    <Content Include="res\test\100114_98.jpg" />
+    <Content Include="res\test\100116_98.jpg" />
+    <Content Include="res\test\100117_98.jpg" />
+    <Content Include="res\test\100118_98.jpg" />
+    <Content Include="res\test\100119_98.jpg" />
+    <Content Include="res\test\100120_98.jpg" />
+    <Content Include="res\test\100122_98.jpg" />
+    <Content Include="res\Wordings\wording1.gif" />
+    <Content Include="res\Wordings\wording2.gif" />
+    <Content Include="res\Wordings\wording3.gif" />
+    <Content Include="res\Wordings\wording4.gif" />
+    <Content Include="res\Wordings\wording5.gif" />
+    <Content Include="res\Wordings\wording6.gif" />
+    <Content Include="res\Wordings\wording7.gif" />
+    <Content Include="res\Wordings\wording8.gif" />
+    <Content Include="res\FashionFlavors\shape_7.gif" />
+    <Content Include="res\FashionFlavors\shape_1.gif" />
+    <Content Include="res\FashionFlavors\shape_3.gif" />
+    <Content Include="res\FashionFlavors\shape_6.gif" />
+    <Content Include="res\FashionFlavors\shape_5.gif" />
+    <Content Include="res\FashionFlavors\shape_2.gif" />
+    <Content Include="res\FashionFlavors\shape_4.gif" />
+    <Content Include="res\FashionFlavors\shape_8.gif" />
+    <Content Include="static\img\ajax-loader-small.gif" />
+    <Content Include="static\img\browse.jpg" />
+    <Content Include="static\img\btngo.PNG" />
+    <Content Include="static\img\BuildYourCloset\already_registered.gif" />
+    <Content Include="static\img\BuildYourCloset\arrow.gif" />
+    <Content Include="static\img\BuildYourCloset\background.gif" />
+    <Content Include="static\img\BuildYourCloset\bubbles-animation.gif" />
+    <Content Include="static\img\BuildYourCloset\button_build_your_closet.gif" />
+    <Content Include="static\img\BuildYourCloset\button_continue_building.gif" />
+    <Content Include="static\img\BuildYourCloset\button_finish.gif" />
+    <Content Include="static\img\BuildYourCloset\button_next.gif" />
+    <Content Include="static\img\BuildYourCloset\button_previous.gif" />
+    <Content Include="static\img\BuildYourCloset\button_previous2.gif" />
+    <Content Include="static\img\BuildYourCloset\button_quiz.gif" />
+    <Content Include="static\img\BuildYourCloset\button_restart.gif" />
+    <Content Include="static\img\BuildYourCloset\button_save_later.gif" />
+    <Content Include="static\img\BuildYourCloset\choose_up_to_2.gif" />
+    <Content Include="static\img\BuildYourCloset\img_drag_arrow.jpg" />
+    <Content Include="static\img\BuildYourCloset\img_take_our_quiz.jpg" />
+    <Content Include="static\img\BuildYourCloset\itm_drag_items.jpg" />
+    <Content Include="static\img\BuildYourCloset\mygarments.jpg" />
+    <Content Include="static\img\BuildYourCloset\mywishlist.jpg" />
+    <Content Include="static\img\BuildYourCloset\other_women.gif" />
+    <Content Include="static\img\BuildYourCloset\progress_step1.gif" />
+    <Content Include="static\img\BuildYourCloset\progress_step2.gif" />
+    <Content Include="static\img\BuildYourCloset\progress_step3.gif" />
+    <Content Include="static\img\BuildYourCloset\progress_step4.gif" />
+    <Content Include="static\img\BuildYourCloset\restart.gif" />
+    <Content Include="static\img\BuildYourCloset\step1.gif" />
+    <Content Include="static\img\BuildYourCloset\step2.gif" />
+    <Content Include="static\img\BuildYourCloset\step3.gif" />
+    <Content Include="static\img\BuildYourCloset\steps.gif" />
+    <Content Include="static\img\BuildYourCloset\white.png" />
+    <Content Include="static\img\buttons\btn_build_closet.gif" />
+    <Content Include="static\img\buttons\btn_forgot_pass.gif" />
+    <Content Include="static\img\buttons\btn_login.gif" />
+    <Content Include="static\img\buttons\btn_save_changes.gif" />
+    <Content Include="static\img\close.png" />
+    <Content Include="static\img\coming-soon.jpg" />
+    <Content Include="static\img\coming-soon.png" />
+    <Content Include="static\img\dropdown.jpg" />
+    <Content Include="static\img\error.jpg" />
+    <Content Include="static\img\f.PNG" />
+    <Content Include="static\img\FashionResults\bohemian.png" />
+    <Content Include="static\img\FashionResults\classic.png" />
+    <Content Include="static\img\FashionResults\comfortable.png" />
+    <Content Include="static\img\FashionResults\glamorous.png" />
+    <Content Include="static\img\FashionResults\preppy.png" />
+    <Content Include="static\img\FashionResults\romantic.png" />
+    <Content Include="static\img\FashionResults\sporty.png" />
+    <Content Include="static\img\FashionResults\trendy.png" />
+    <Content Include="static\img\FriendProviders\gmail-minilogo.JPG" />
+    <Content Include="static\img\FriendProviders\live-minilogo.jpg" />
+    <Content Include="static\img\FriendProviders\mail.JPG" />
+    <Content Include="static\img\FriendProviders\yahoo-minilogo.JPG" />
+    <Content Include="static\img\Friends\gmail-logo.jpg" />
+    <Content Include="static\img\Friends\msn_logo.jpg" />
+    <Content Include="static\img\Friends\mycontacts.PNG" />
+    <Content Include="static\img\Friends\yahoo_logo.jpg" />
+    <Content Include="static\img\greenok.png" />
+    <Content Include="static\img\grey.gif" />
+    <Content Include="static\img\Home\animation-home.gif" />
+    <Content Include="static\img\Home\beta-warning.jpg" />
+    <Content Include="static\img\Home\btnSendInvitation.png" />
+    <Content Include="static\img\Home\img_outfits1.jpg" />
+    <Content Include="static\img\Home\img_outfits2.jpg" />
+    <Content Include="static\img\Home\img_outfits3.jpg" />
+    <Content Include="static\img\Home\img_outfits4.jpg" />
+    <Content Include="static\img\Home\registeredhome.png" />
+    <Content Include="static\img\icon-ok.gif" />
+    <Content Include="static\img\img_forgot_pass.gif" />
+    <Content Include="static\img\img_fun.gif" />
+    <Content Include="static\img\img_header_item.gif" />
+    <Content Include="static\img\img_shoes.gif" />
+    <Content Include="static\img\img_steps1.gif" />
+    <Content Include="static\img\img_steps2.gif" />
+    <Content Include="static\img\img_steps3.gif" />
+    <Content Include="static\img\img_steps4.gif" />
+    <Content Include="static\img\Jcrop.gif" />
+    <Content Include="static\img\jq\blue.png" />
+    <Content Include="static\img\jq\button_left.gif" />
+    <Content Include="static\img\jq\button_right.gif" />
+    <Content Include="static\img\jq\hori_large.png" />
+    <Content Include="static\img\jq\ico_slider.gif" />
+    <Content Include="static\img\jq\tab.gif" />
+    <Content Include="static\img\jq\tab_selected.gif" />
+    <Content Include="static\img\jq\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="static\img\jq\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="static\img\jq\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="static\img\jq\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="static\img\jq\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="static\img\jq\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="static\img\jq\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="static\img\jq\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="static\img\jq\ui-icons_222222_256x240.png" />
+    <Content Include="static\img\jq\ui-icons_2e83ff_256x240.png" />
+    <Content Include="static\img\jq\ui-icons_454545_256x240.png" />
+    <Content Include="static\img\jq\ui-icons_888888_256x240.png" />
+    <Content Include="static\img\jq\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="static\img\Login\btnSend.jpg" />
+    <Content Include="static\img\Login\button_mini_finish.gif" />
+    <Content Include="static\img\Login\button_mini_ok.gif" />
+    <Content Include="static\img\logo\fashion_ade.gif" />
+    <Content Include="static\img\logo\logo.gif" />
+    <Content Include="static\img\logo\logoBeta.gif" />
+    <Content Include="static\img\logo\wbencLogo.gif" />
+    <Content Include="static\img\Mail\azul.gif" />
+    <Content Include="static\img\Mail\fdoHeader.gif" />
+    <Content Include="static\img\Mail\gris.gif" />
+    <Content Include="static\img\Mail\header.gif" />
+    <Content Include="static\img\msg_shadow.gif" />
+    <Content Include="static\img\MyGarments\AddGarments.png" />
+    <Content Include="static\img\MyGarments\addnotateoutfit.JPG" />
+    <Content Include="static\img\MyGarments\addthisbutton.JPG" />
+    <Content Include="static\img\MyGarments\Ajax-loader.gif" />
+    <Content Include="static\img\MyGarments\bluex.JPG" />
+    <Content Include="static\img\MyGarments\delete.gif" />
+    <Content Include="static\img\MyGarments\gobutton.JPG" />
+    <Content Include="static\img\MyGarments\img_save.gif" />
+    <Content Include="static\img\MyGarments\img_save_to_outfits.jpg" />
+    <Content Include="static\img\MyGarments\img_skip_view_outfits.jpg" />
+    <Content Include="static\img\MyGarments\img_upload_garments.jpg" />
+    <Content Include="static\img\MyGarments\outfit_down.jpg" />
+    <Content Include="static\img\MyGarments\outfit_up.jpg" />
+    <Content Include="static\img\MyGarments\ratenow.JPG" />
+    <Content Include="static\img\MyGarments\remove.jpg" />
+    <Content Include="static\img\MyGarments\seemannequin.JPG" />
+    <Content Include="static\img\MyGarments\sendnow.JPG" />
+    <Content Include="static\img\MyGarments\star.gif" />
+    <Content Include="static\img\MyGarments\updater.JPG" />
+    <Content Include="static\img\MyGarments\UploadGarments.png" />
+    <Content Include="static\img\orangearrow.JPG" />
+    <Content Include="static\img\quiz_logo.jpg" />
+    <Content Include="static\img\registrationValitaditonAlert.JPG" />
+    <Content Include="static\img\registrationValitaditonOk.JPG" />
+    <Content Include="static\img\Registration\already_registered.gif" />
+    <Content Include="static\img\Registration\sign_in.gif" />
+    <Content Include="static\img\remove_item.jpg" />
+    <Content Include="static\img\shadow.gif" />
+    <Content Include="static\img\shadow_down.GIF" />
+    <Content Include="static\img\shadow_up.gif" />
+    <Content Include="static\img\Silouhette\silouhette1.gif" />
+    <Content Include="static\img\Silouhette\silouhette2.gif" />
+    <Content Include="static\img\Silouhette\silouhette3.gif" />
+    <Content Include="static\img\Silouhette\silouhette4.gif" />
+    <Content Include="static\img\Silouhette\silouhette5.gif" />
+    <Content Include="static\img\simplePassMeterSprite.png" />
+    <Content Include="static\img\Sponsors\logo_lg.jpg" />
+    <Content Include="static\img\trash.png" />
+    <Content Include="static\img\UploadIcons\icon_Generic_big.png" />
+    <Content Include="static\img\UploadIcons\icon_GIF_big.png" />
+    <Content Include="static\img\UploadIcons\icon_JPG_big.png" />
+    <Content Include="static\img\UploadIcons\icon_PNG_big.png" />
+    <Content Include="static\img\warning.gif" />
+    <Content Include="static\img\wbencLogo.gif" />
+    <Content Include="static\img\white.png" />
+    <Content Include="static\img\x.PNG" />
+    <Content Include="static\js\common.js" />
+    <Content Include="static\js\jquery.simplePassMeter-0.2.min.js" />
+    <Content Include="static\js\jquery-1.3.2.min.js" />
+    <Content Include="static\js\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="static\js\jquery.autocomplete.js" />
+    <Content Include="static\js\jquery.Jcrop.min.js" />
+    <Content Include="static\js\jquery.lazyload.mini.js" />
+    <Content Include="static\js\jquery.MetaData.js" />
+    <Content Include="static\js\jquery.rating.js" />
+    <Content Include="static\js\jquery.toJSON.js" />
+    <Content Include="static\js\jquery.validate.min.js" />
+    <Content Include="static\js\livevalidation_standalone.compressed.js" />
+    <Content Include="static\js\logic.js" />
+    <Content Include="static\js\MicrosoftAjax.debug.js" />
+    <Content Include="static\js\MicrosoftAjax.js" />
+    <Content Include="static\js\MicrosoftMvcAjax.debug.js" />
+    <Content Include="static\js\MicrosoftMvcAjax.js" />
+    <Content Include="static\js\MicrosoftMvcValidation.js" />
+    <Content Include="static\js\tools.scrollable-1.1.2.min.js" />
+    <Content Include="Views\Account\Index.aspx" />
+    <Content Include="Views\ContactUs\Thanks.aspx" />
+    <Content Include="Views\ContactUs\Index.aspx" />
+    <Content Include="Views\Content\Private.aspx" />
+    <Content Include="Views\EmailConfirmation\CodeValidated.aspx" />
+    <Content Include="Views\EmailConfirmation\CodeInvalid.aspx" />
+    <Content Include="Views\EventTypeSelector\Index.aspx" />
+    <Content Include="Views\FlavorSelect\FlavorChangeResult.aspx" />
+    <Content Include="Views\FlavorWeight\Index.aspx" />
+    <Content Include="Views\Friend\ApproveNewFriends.ascx" />
+    <Content Include="Views\FriendBetaInvitation\Index.aspx" />
+    <Content Include="Views\Friend\FriendList.ascx" />
+    <Content Include="Views\Friend\FriendMaster.ascx" />
+    <Content Include="Views\Friend\Index.aspx" />
+    <Content Include="Views\Friend\NewFriendList.ascx" />
+    <Content Include="Views\Friend\NewFriendRow.ascx" />
+    <Content Include="Views\GarmentSelector\Index.aspx" />
+    <Content Include="Views\FlavorSelect\Index.aspx" />
+    <Content Include="Views\GarmentSelector\Selector.aspx" />
+    <Content Include="Views\OutfitUpdaters\Index.aspx" />
+    <Content Include="Views\OUImportation\Index.aspx" />
+    <Content Include="Views\Rating\Error.aspx" />
+    <Content Include="Views\Registration\Index.aspx" />
+    <Content Include="Views\EmailConfirmation\Index.aspx" />
+    <Content Include="Views\Contact\Index.aspx" />
+    <Content Include="Views\Content\Content.aspx" />
+    <Content Include="Views\Content\GarmentCare.aspx" />
+    <Content Include="Views\Content\Organizing.aspx" />
+    <Content Include="Views\Content\TrendAlerts.aspx" />
+    <Content Include="Views\Content\StyleAlerts.aspx" />
+    <Content Include="Views\Home\RegisteredUser.aspx" />
+    <Content Include="Views\Login\ForgotPassword.aspx" />
+    <Content Include="Views\Login\Index.aspx" />
+    <Content Include="Views\MyOutfits\OutfitResume.aspx" />
+    <Content Include="Views\MyGarments\ReadMore.aspx" />
+    <Content Include="Views\MyGarments\Index.aspx" />
+    <Content Include="Views\MyOutfits\Index.aspx" />
+    <Content Include="Views\MyGarments\Recomendations.aspx" />
+    <Content Include="Views\MyOutfits\OutfitSeason.ascx" />
+    <Content Include="Views\MyOutfits\OutfitList.ascx" />
+    <Content Include="Views\GarmentSelector\GarmentsList.ascx" />
+    <Content Include="Views\Shared\UpdaterTrends.ascx" />
+    <Content Include="Views\UploadGarment\UploadFile.aspx" />
+    <Content Include="Views\UploadGarment\Index.aspx" />
+    <Content Include="Views\OtherOutfits\Index.aspx" />
+    <Content Include="Views\Rating\Index.aspx" />
+    <Content Include="Views\Rating\Thanks.aspx" />
+    <Content Include="Views\FlavorSelect\BrandSet.ascx" />
+    <Content Include="Views\Account\ChangeUserAnswer.ascx" />
+    <Content Include="Views\Account\ChangeUserInfo.ascx" />
+    <Content Include="Views\Account\ChangeUserMail.ascx" />
+    <Content Include="Views\Account\ChangeUserPassword.ascx" />
+    <Content Include="Views\Content\ContentMenu.ascx" />
+    <Content Include="Views\Content\ContentItem.ascx" />
+    <Content Include="Views\Content\ContentBlogItems.ascx" />
+    <Content Include="Views\EventTypeSelector\EventType.ascx" />
+    <Content Include="Views\Rating\FriendRate.ascx" />
+    <Content Include="Views\Friend\FriendRow.ascx" />
+    <Content Include="Views\MyOutfits\InviteFriends.ascx" />
+    <Content Include="Views\Login\LogIn.ascx" />
+    <Content Include="Views\Shared\Outfit.ascx" />
+    <Content Include="Views\Shared\Paging.ascx" />
+    <Content Include="Views\FlavorSelect\Wording.ascx" />
+    <Content Include="Views\FlavorSelect\FashionFlavor.ascx" />
+    <Content Include="Views\FlavorSelect\StylePhotograph.ascx" />
+    <Content Include="Views\WishList\List.aspx" />
+    <Content Include="xd_receiver.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="res\Garments\65\" />
+    <Folder Include="res\Garments\95\" />
+    <Folder Include="res\Garments\UploadedImages\" />
+    <Folder Include="static\upd\content\" />
+    <Folder Include="static\upd\garments\" />
+    <Folder Include="Views\Profile\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1359</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

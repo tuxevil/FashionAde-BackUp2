@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nybble/!svn/ver/4853/FashionAde/trunk/app/FashionAde.ApplicationServices/Communication
+END
+IMessageSenderService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/nybble/!svn/ver/4062/FashionAde/trunk/app/FashionAde.ApplicationServices/Communication/IMessageSenderService.cs
+END
+ContactMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/nybble/!svn/ver/4062/FashionAde/trunk/app/FashionAde.ApplicationServices/Communication/ContactMessage.cs
+END
+IContactMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nybble/!svn/ver/4062/FashionAde/trunk/app/FashionAde.ApplicationServices/Communication/IContactMessage.cs
+END
+SmtpMessageSenderService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/nybble/!svn/ver/4853/FashionAde/trunk/app/FashionAde.ApplicationServices/Communication/SmtpMessageSenderService.cs
+END

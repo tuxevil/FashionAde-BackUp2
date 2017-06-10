@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nybble/!svn/ver/4775/FashionAde/trunk/app/FashionAde.Core/ThirdParties
+END
+Partner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4574/FashionAde/trunk/app/FashionAde.Core/ThirdParties/Partner.cs
+END
+OutfitUpdater.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/4775/FashionAde/trunk/app/FashionAde.Core/ThirdParties/OutfitUpdater.cs
+END
+_thirdParties.cd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/2844/FashionAde/trunk/app/FashionAde.Core/ThirdParties/_thirdParties.cd
+END
+IThirdParty.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/2818/FashionAde/trunk/app/FashionAde.Core/ThirdParties/IThirdParty.cs
+END
+OutfitUpdaterByPreCombination.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nybble/!svn/ver/4506/FashionAde/trunk/app/FashionAde.Core/ThirdParties/OutfitUpdaterByPreCombination.cs
+END

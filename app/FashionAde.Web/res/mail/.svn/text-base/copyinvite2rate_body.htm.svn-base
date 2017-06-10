@@ -1,0 +1,11 @@
+﻿Hi,
+
+I'm imviting you to rate my outfit combination:
+|
+<img src='$EmailCopyData.GarmentsUri$$EmailCopyData.Components[N].ImageUri$' alt='$EmailCopyData.Components[N].Title$' />
+|
+<a href='$EmailCopyData.OutfitUpdater.BuyUrl$'><img src='$EmailCopyData.OutfitUpdater.ImageUrl$' alt='$EmailCopyData.OutfitUpdater.Name$' /></a>
+<br /><br />
+Comments:<br />
+$EmailCopyData.Comments$<br /><br />
+Rate it NOW <span style='color: #F38333;' >here</span>!

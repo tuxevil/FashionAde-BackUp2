@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/nybble/!svn/ver/4860/FashionAde/trunk/tests/FashionAde.Tests/FashionAde.ApplicationServices
+END
+ContentServiceTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/nybble/!svn/ver/4363/FashionAde/trunk/tests/FashionAde.Tests/FashionAde.ApplicationServices/ContentServiceTest.cs
+END
+FileTemplateService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/nybble/!svn/ver/4860/FashionAde/trunk/tests/FashionAde.Tests/FashionAde.ApplicationServices/FileTemplateService.cs
+END
+OutfitEngineTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/nybble/!svn/ver/4457/FashionAde/trunk/tests/FashionAde.Tests/FashionAde.ApplicationServices/OutfitEngineTest.cs
+END

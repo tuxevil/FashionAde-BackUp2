@@ -1,0 +1,114 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="FashionAde.Web.Controllers" %>
+<%@ Import Namespace="System.Reflection"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <link href="/static/css/all.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+        <title>FashionAde</title>
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <asp:ContentPlaceHolder ID="OverlayPlaceHolder" runat="server" />
+    
+    <input id="hidMessage" type="hidden" rel="#divMessage" />
+
+    <div id="divMessage" class="apple_overlay"> 
+        <img src='/static/img/warning.gif' />
+        <span id="spnMsg"></span>	
+    </div> 
+    
+    <div id="doc2" class="yui-t7"> 
+        <div id="hd" role="banner">            
+            <div id="divLogo">
+                <a href="<%= Url.RouteUrl(new { controller = "Home", action= "Index"}) %>" >
+                    <img  id="imgLogo" src="/static/img/logo/logoBeta.gif" alt="Fashion Ade" style="width:310px; height:74px;" />            
+                </a>
+            </div>
+            
+            <div id="divSignIn">
+                
+                <%
+                    if (ViewData["UserName"] == null)
+                    {%>               
+                        <span class="spnWelcome">WELCOME</span> 
+                        <br /><br /><span class="spnMaster" style="float: right">WOULD YOU LIKE TO <a href="<%= Url.RouteUrl(new { controller = "LogIn", action= "Index"}) %>" >SIGN IN?</a></span>
+                    <%}
+                    else
+                    {   
+                        string username = ViewData["UserName"].ToString().ToUpper();%>
+                        <span class="spnWelcome"><%=username %></span><span class="spnWelcome">WELCOME</span><br /><br /> <a href="<%= Url.RouteUrl(new { controller = "LogIn", action= "LogOut"}) %>" style="float:right">SIGN OUT</a> <a href="<%= Url.RouteUrl(new { controller = "Account", action= "Index"}) %>" style="float:right;">PROFILE</a>
+                    <%}%>
+            </div>
+            
+            <div class="headerLine"></div>
+                        
+            <div id="divMenu" class="headerMenu">
+             <%
+                    if (ViewData["UserName"] == null)
+                    {%>     
+                        <div id="divBuildCloset" class="menuDivLeft"><a id="lnkBuildCloset" class="menuLinkLeft" href="<%= Url.RouteUrl(new { controller = "FlavorSelect", action= "Index"}) %>">Build Closet</a></div> 
+                    <%}
+                    else
+                    {%>
+                        <div id="divMyGarments" class="menuDivLeft">
+                            <a id="lnkMyGarments" class="menuLinkFirst" href="<%= Url.RouteUrl(new { controller = "MyGarments", action= "Index"}) %>">My Garments</a>                            
+                            <a id="lnkMyOutfits" class="menuLinkOthers" href="<%= Url.RouteUrl(new { controller = "MyOutfits", action= "Index"}) %>">My Outfits</a>
+                            <a id="lnkWishList" class="menuLinkOthers" href="<%= Url.RouteUrl(new { controller = "WishList", action= "List"}) %>">Wish List</a>
+                            <a id="lnkFriends" class="menuLinkOthers" href="<%= Url.RouteUrl(new { controller = "Friend", action= "Index"}) %>">My Friends</a>
+                            <a id="lnkAddGarments" class="menuLinkOthers" href="<%= Url.RouteUrl(new { controller = "GarmentSelector", action= "Selector"}) %>">Add Garments</a>                            
+                        </div>
+                    <%}%>
+                    
+                <div id="divStyleAlerts"><a id="lnkStyleAlerts" href="<%= Url.RouteUrl(new { controller = "Content", action= "TrendAlerts" }) %>">Style Alerts</a></div>
+                <div id="divOthersOutfits"><a id="lnkOthersOutfits" href="<%= Url.RouteUrl(new { controller = "OtherOutfits", action= "Index"}) %>">Other&#39;s Outfits</a></div>
+                
+            </div>            
+        </div>
+        <div id="bd" role="main">              
+            <div class="yui-g">
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" />
+            </div> 
+        </div> 
+        <div id="ft" role="contentinfo">            
+            <div id="divCopyright">Copyright &copy; 2010 <a href="http://www.abundantcloset.com" target="_blank" style="display:inline; float:none">Abundant Closet LLC</a>- All rights reserved.</div>
+            <div id="divFtLinks">                
+                <a href="<%= Url.RouteUrl(new { controller = "Content", action= "AboutUs"}) %>" target="_blank">About Us</a>
+                <a href="<%= Url.RouteUrl(new { controller = "Content", action= "TermsOfUse"}) %>" target="_blank">Terms of Use</a>
+                <a href="<%= Url.RouteUrl(new { controller = "Content", action= "Privacy"}) %>" target="_blank">Privacy</a>
+                <a href="<%= Url.RouteUrl(new { controller = "Content", action= "SiteMap"}) %>" target="_blank">Site Map</a>
+                <a href="<%= Url.RouteUrl(new { controller = "ContactUs", action= "Index"}) %>" target="_blank">Send Feedback</a>
+            </div>                        
+            <img src="/static/img/logo/wbencLogo.gif" class="certified" />
+            <div class="browsersSupported">Browsers Supported: IE 7+, FireFox 3.5+, Chrome 1.0+, Opera 9.6+, Safari 4+</div>
+        </div>
+        
+    </div>
+    
+    <script type="text/javascript" src="/static/js/jquery-1.3.2.min.js"></script>        
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script> 
+    <script type="text/javascript" src="/static/js/jquery-ui-1.7.2.custom.min.js"></script>    
+    <script type="text/javascript" src="http://yui.yahooapis.com/combo?2.8.0r4/build/yahoo/yahoo-min.js&2.8.0r4/build/event/event-min.js&2.8.0r4/build/history/history-min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.toJSON.js"></script>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    
+    <asp:ContentPlaceHolder ID="ScriptsPlaceHolder" runat="server" />
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-16966958-1']);
+        _gaq.push(['_setDomainName', '.fashion-ade.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

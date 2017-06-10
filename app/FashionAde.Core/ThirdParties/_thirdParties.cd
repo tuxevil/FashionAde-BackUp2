@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.ThirdParties.Partner">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <Members>
+      <Field Name="code" Hidden="true" />
+      <Field Name="colorScheme" Hidden="true" />
+      <Field Name="footerLayout" Hidden="true" />
+      <Field Name="headerLayout" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="websiteUri" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAAAgAAgAIQAIAAEAAAAAAAAiAAAAIg=</HashCode>
+      <FileName>ThirdParties\Partner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="FashionAde.Core.ThirdParties.IThirdParty">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThirdParties\IThirdParty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

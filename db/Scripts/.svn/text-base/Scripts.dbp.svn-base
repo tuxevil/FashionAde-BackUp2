@@ -1,0 +1,23 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "Scripts"
+   MSDTVersion = "80"
+   DefDBRef = "sql.nybblenetwork.com(fashionade)"
+   Begin Folder = "01.DEV"
+      Begin Folder = "v0.1"
+      End
+   End
+   Begin Folder = "02.QA"
+   End
+   Begin Folder = "03.PRD"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "sql.nybblenetwork.com(fashionade)"
+         ConnectStr = "server=sql.nybblenetwork.com;User Id=fade;Persist Security Info=True;database=fashionade"
+         Provider = "{C6882346-E592-4DA5-80BA-D2EADCDA0359}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Others"
+      Script = "Update Silouhettes.sql"
+   End
+End

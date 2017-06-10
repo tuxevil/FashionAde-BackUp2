@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nybble/!svn/ver/4904/FashionAde/trunk/db/FashionAde.Scripts/03.PRD
+END
+EmailChangeModification.sql
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/4890/FashionAde/trunk/db/FashionAde.Scripts/03.PRD/EmailChangeModification.sql
+END
+RecomendationContentUpdate.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nybble/!svn/ver/4904/FashionAde/trunk/db/FashionAde.Scripts/03.PRD/RecomendationContentUpdate.sql
+END
+UpdateForEventTypes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nybble/!svn/ver/4890/FashionAde/trunk/db/FashionAde.Scripts/03.PRD/UpdateForEventTypes.sql
+END

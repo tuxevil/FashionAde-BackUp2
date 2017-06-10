@@ -1,0 +1,10 @@
+﻿<span style="color:#475F8F; font-weight:bold;">Dear $RegisterData.UserName$</span><br /><br />
+<span style="color:#000000; font-weight:bold;">We need to validate your email address.</span><br /><br />
+<span style="color:#000000;">You can copy-paste the following code into the requested screen in your browser</span><br />
+<span style="color:#000000; font-weight:bold;">Code:</span> <span style="color:#475F8F; font-weight:bold;">$RegisterData.ConfimationCode$</span><br /><br />
+
+<span style="color:#000000; font-weight:bold;">Or follow this link :</span><br />
+<a href="[SITEURL]$RegisterData.ConfirmUrl$">[SITEURL]$RegisterData.ConfirmUrl$</a><br /><br />
+
+<span style="color:#475F8F; font-weight:normal;">Have fun!</span><br />
+<span style="color:#475F8F; font-weight:bold;">Fashion Ade Team</span>

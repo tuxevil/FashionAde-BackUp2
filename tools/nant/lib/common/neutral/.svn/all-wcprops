@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral
+END
+NUnitCore.dll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral/NUnitCore.dll
+END
+NDoc.Documenter.Msdn.dll
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral/NDoc.Documenter.Msdn.dll
+END
+ICSharpCode.SharpZipLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral/ICSharpCode.SharpZipLib.dll
+END
+NDoc.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral/NDoc.Core.dll
+END
+NDoc.ExtendedUI.dll
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral/NDoc.ExtendedUI.dll
+END
+ICSharpCode.SharpCvsLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral/ICSharpCode.SharpCvsLib.dll
+END
+ICSharpCode.SharpCvsLib.Console.dll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/common/neutral/ICSharpCode.SharpCvsLib.Console.dll
+END

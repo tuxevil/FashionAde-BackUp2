@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4923/FashionAde/trunk/app/FashionAde.ApplicationServices/Accounts
+END
+RegisterMemberService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/nybble/!svn/ver/4923/FashionAde/trunk/app/FashionAde.ApplicationServices/Accounts/RegisterMemberService.cs
+END
+RegisterMemberMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/nybble/!svn/ver/4860/FashionAde/trunk/app/FashionAde.ApplicationServices/Accounts/RegisterMemberMessage.cs
+END
+IRegisterMemberService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/nybble/!svn/ver/4824/FashionAde/trunk/app/FashionAde.ApplicationServices/Accounts/IRegisterMemberService.cs
+END

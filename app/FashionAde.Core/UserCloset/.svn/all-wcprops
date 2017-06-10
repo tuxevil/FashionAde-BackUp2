@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nybble/!svn/ver/4910/FashionAde/trunk/app/FashionAde.Core/UserCloset
+END
+FriendRating.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4032/FashionAde/trunk/app/FashionAde.Core/UserCloset/FriendRating.cs
+END
+OutfitDetails.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/3008/FashionAde/trunk/app/FashionAde.Core/UserCloset/OutfitDetails.cs
+END
+FriendRatingInvitation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/3676/FashionAde/trunk/app/FashionAde.Core/UserCloset/FriendRatingInvitation.cs
+END
+UserRating.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/3507/FashionAde/trunk/app/FashionAde.Core/UserCloset/UserRating.cs
+END
+Rating.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nybble/!svn/ver/4910/FashionAde/trunk/app/FashionAde.Core/UserCloset/Rating.cs
+END
+ClosetOutfit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4741/FashionAde/trunk/app/FashionAde.Core/UserCloset/ClosetOutfit.cs
+END
+_wishList.cd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/2846/FashionAde/trunk/app/FashionAde.Core/UserCloset/_wishList.cd
+END
+WishGarment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nybble/!svn/ver/4078/FashionAde/trunk/app/FashionAde.Core/UserCloset/WishGarment.cs
+END
+ClosetOutfitStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nybble/!svn/ver/4072/FashionAde/trunk/app/FashionAde.Core/UserCloset/ClosetOutfitStatus.cs
+END
+Closet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nybble/!svn/ver/4728/FashionAde/trunk/app/FashionAde.Core/UserCloset/Closet.cs
+END
+ClosetOutfitVisibility.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/4072/FashionAde/trunk/app/FashionAde.Core/UserCloset/ClosetOutfitVisibility.cs
+END
+ClosetStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4412/FashionAde/trunk/app/FashionAde.Core/UserCloset/ClosetStatus.cs
+END
+GarmentDetails.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nybble/!svn/ver/4910/FashionAde/trunk/app/FashionAde.Core/UserCloset/GarmentDetails.cs
+END
+_closetMinimum.cd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nybble/!svn/ver/2849/FashionAde/trunk/app/FashionAde.Core/UserCloset/_closetMinimum.cd
+END
+WishList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4100/FashionAde/trunk/app/FashionAde.Core/UserCloset/WishList.cs
+END
+ClosetGarment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4412/FashionAde/trunk/app/FashionAde.Core/UserCloset/ClosetGarment.cs
+END
+_closet.cd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nybble/!svn/ver/2844/FashionAde/trunk/app/FashionAde.Core/UserCloset/_closet.cd
+END
+UserOutfit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/4600/FashionAde/trunk/app/FashionAde.Core/UserCloset/UserOutfit.cs
+END

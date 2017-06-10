@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/nybble/!svn/ver/4043/FashionAde/trunk/lib/oauth-net
+END
+HtmlAgilityPack.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nybble/!svn/ver/4043/FashionAde/trunk/lib/oauth-net/HtmlAgilityPack.dll
+END
+Microsoft.Practices.ServiceLocation.dll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/nybble/!svn/ver/4043/FashionAde/trunk/lib/oauth-net/Microsoft.Practices.ServiceLocation.dll
+END
+OAuth.Net.Components.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/4043/FashionAde/trunk/lib/oauth-net/OAuth.Net.Components.dll
+END
+OAuth.Net.Common.dll
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nybble/!svn/ver/4043/FashionAde/trunk/lib/oauth-net/OAuth.Net.Common.dll
+END
+OAuth.Net.Consumer.dll
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nybble/!svn/ver/4043/FashionAde/trunk/lib/oauth-net/OAuth.Net.Consumer.dll
+END
+OAuth.Net.ServiceProvider.dll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4043/FashionAde/trunk/lib/oauth-net/OAuth.Net.ServiceProvider.dll
+END

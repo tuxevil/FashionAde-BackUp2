@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/tasks/net
+END
+NAnt.Contrib.Tasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/tasks/net/NAnt.Contrib.Tasks.xml
+END
+MSMTaskTemplate.msm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/tasks/net/MSMTaskTemplate.msm
+END
+MSITaskErrors.mst
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/tasks/net/MSITaskErrors.mst
+END
+NAnt.Contrib.Tasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/tasks/net/NAnt.Contrib.Tasks.dll
+END
+MSITaskTemplate.msi
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/tasks/net/MSITaskTemplate.msi
+END
+MSMTaskErrors.mst
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/tasks/net/MSMTaskErrors.mst
+END

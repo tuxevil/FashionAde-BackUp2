@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nybble/!svn/ver/4824/FashionAde/trunk/app/FashionAde.Core/Accounts
+END
+InvitationCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4297/FashionAde/trunk/app/FashionAde.Core/Accounts/InvitationCode.cs
+END
+BasicUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nybble/!svn/ver/4394/FashionAde/trunk/app/FashionAde.Core/Accounts/BasicUser.cs
+END
+PrivacyStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nybble/!svn/ver/3311/FashionAde/trunk/app/FashionAde.Core/Accounts/PrivacyStatus.cs
+END
+FriendProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/3887/FashionAde/trunk/app/FashionAde.Core/Accounts/FriendProvider.cs
+END
+_userDiagram.cd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/4095/FashionAde/trunk/app/FashionAde.Core/Accounts/_userDiagram.cd
+END
+UserFlavor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4668/FashionAde/trunk/app/FashionAde.Core/Accounts/UserFlavor.cs
+END
+IBasicUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4061/FashionAde/trunk/app/FashionAde.Core/Accounts/IBasicUser.cs
+END
+RegisteredUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4824/FashionAde/trunk/app/FashionAde.Core/Accounts/RegisteredUser.cs
+END
+ZipCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nybble/!svn/ver/3389/FashionAde/trunk/app/FashionAde.Core/Accounts/ZipCode.cs
+END
+SecurityQuestion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nybble/!svn/ver/3303/FashionAde/trunk/app/FashionAde.Core/Accounts/SecurityQuestion.cs
+END
+RegisteredUserStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nybble/!svn/ver/4032/FashionAde/trunk/app/FashionAde.Core/Accounts/RegisteredUserStatus.cs
+END
+InvitedUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4064/FashionAde/trunk/app/FashionAde.Core/Accounts/InvitedUser.cs
+END
+_temporalUser.cd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nybble/!svn/ver/2849/FashionAde/trunk/app/FashionAde.Core/Accounts/_temporalUser.cd
+END
+_user Upload.cd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/2997/FashionAde/trunk/app/FashionAde.Core/Accounts/_user%20Upload.cd
+END
+Friend.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/4116/FashionAde/trunk/app/FashionAde.Core/Accounts/Friend.cs
+END
+UserSize.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nybble/!svn/ver/3239/FashionAde/trunk/app/FashionAde.Core/Accounts/UserSize.cs
+END

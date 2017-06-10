@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nybble/!svn/ver/4663/FashionAde/trunk/app/FashionAde.Core/Clothing
+END
+Tag.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nybble/!svn/ver/3008/FashionAde/trunk/app/FashionAde.Core/Clothing/Tag.cs
+END
+GarmentTags.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4255/FashionAde/trunk/app/FashionAde.Core/Clothing/GarmentTags.cs
+END
+Pattern.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nybble/!svn/ver/4663/FashionAde/trunk/app/FashionAde.Core/Clothing/Pattern.cs
+END
+Category.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nybble/!svn/ver/2816/FashionAde/trunk/app/FashionAde.Core/Clothing/Category.cs
+END
+GarmentShape.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/4255/FashionAde/trunk/app/FashionAde.Core/Clothing/GarmentShape.cs
+END
+Color.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nybble/!svn/ver/4175/FashionAde/trunk/app/FashionAde.Core/Clothing/Color.cs
+END
+ColorFamily.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4663/FashionAde/trunk/app/FashionAde.Core/Clothing/ColorFamily.cs
+END
+Silouhette.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4663/FashionAde/trunk/app/FashionAde.Core/Clothing/Silouhette.cs
+END
+Fabric.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/4136/FashionAde/trunk/app/FashionAde.Core/Clothing/Fabric.cs
+END
+Season.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nybble/!svn/ver/4065/FashionAde/trunk/app/FashionAde.Core/Clothing/Season.cs
+END
+ApprovalStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4065/FashionAde/trunk/app/FashionAde.Core/Clothing/ApprovalStatus.cs
+END
+PatternKeywordsByPartner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/4652/FashionAde/trunk/app/FashionAde.Core/Clothing/PatternKeywordsByPartner.cs
+END
+UserGarment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4551/FashionAde/trunk/app/FashionAde.Core/Clothing/UserGarment.cs
+END
+_garmentTags.cd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/2849/FashionAde/trunk/app/FashionAde.Core/Clothing/_garmentTags.cd
+END
+Garment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nybble/!svn/ver/4654/FashionAde/trunk/app/FashionAde.Core/Clothing/Garment.cs
+END
+ColorFamilyKeywordsByPartner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/nybble/!svn/ver/4652/FashionAde/trunk/app/FashionAde.Core/Clothing/ColorFamilyKeywordsByPartner.cs
+END
+Structure.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nybble/!svn/ver/3420/FashionAde/trunk/app/FashionAde.Core/Clothing/Structure.cs
+END
+GarmentStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nybble/!svn/ver/2997/FashionAde/trunk/app/FashionAde.Core/Clothing/GarmentStatus.cs
+END
+SilouhetteKeywordsByPartner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nybble/!svn/ver/4652/FashionAde/trunk/app/FashionAde.Core/Clothing/SilouhetteKeywordsByPartner.cs
+END
+GarmentVisibility.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/3455/FashionAde/trunk/app/FashionAde.Core/Clothing/GarmentVisibility.cs
+END
+_myGarments.cd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/2841/FashionAde/trunk/app/FashionAde.Core/Clothing/_myGarments.cd
+END
+LayerCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nybble/!svn/ver/3492/FashionAde/trunk/app/FashionAde.Core/Clothing/LayerCode.cs
+END

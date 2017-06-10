@@ -1,0 +1,1 @@
+﻿update garments set title = null where GarmentId = 0; 

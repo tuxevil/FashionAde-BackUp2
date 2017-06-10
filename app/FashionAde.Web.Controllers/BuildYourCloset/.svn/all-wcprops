@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4908/FashionAde/trunk/app/FashionAde.Web.Controllers/BuildYourCloset
+END
+FlavorSelectController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/nybble/!svn/ver/4684/FashionAde/trunk/app/FashionAde.Web.Controllers/BuildYourCloset/FlavorSelectController.cs
+END
+RegistrationController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/nybble/!svn/ver/4908/FashionAde/trunk/app/FashionAde.Web.Controllers/BuildYourCloset/RegistrationController.cs
+END
+FlavorChangeController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/nybble/!svn/ver/4668/FashionAde/trunk/app/FashionAde.Web.Controllers/BuildYourCloset/FlavorChangeController.cs
+END
+BuildYourClosetStateManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/nybble/!svn/ver/4717/FashionAde/trunk/app/FashionAde.Web.Controllers/BuildYourCloset/BuildYourClosetStateManager.cs
+END
+FlavorWeightController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/nybble/!svn/ver/4745/FashionAde/trunk/app/FashionAde.Web.Controllers/BuildYourCloset/FlavorWeightController.cs
+END
+EventTypeSelectorController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/nybble/!svn/ver/4668/FashionAde/trunk/app/FashionAde.Web.Controllers/BuildYourCloset/EventTypeSelectorController.cs
+END

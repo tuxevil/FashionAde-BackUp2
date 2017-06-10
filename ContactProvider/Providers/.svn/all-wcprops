@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nybble/!svn/ver/4280/FashionAde/trunk/ContactProvider/Providers
+END
+GoogleProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nybble/!svn/ver/4280/FashionAde/trunk/ContactProvider/Providers/GoogleProvider.cs
+END
+LiveProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nybble/!svn/ver/4280/FashionAde/trunk/ContactProvider/Providers/LiveProvider.cs
+END
+YahooProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4280/FashionAde/trunk/ContactProvider/Providers/YahooProvider.cs
+END

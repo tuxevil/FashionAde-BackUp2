@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/4860/FashionAde/trunk/app/FashionAde.ApplicationServices/Templates
+END
+FileMessageTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nybble/!svn/ver/4087/FashionAde/trunk/app/FashionAde.ApplicationServices/Templates/FileMessageTemplate.cs
+END
+RegExpTemplatorHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/nybble/!svn/ver/4860/FashionAde/trunk/app/FashionAde.ApplicationServices/Templates/RegExpTemplatorHelper.cs
+END
+IMessageTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nybble/!svn/ver/4062/FashionAde/trunk/app/FashionAde.ApplicationServices/Templates/IMessageTemplate.cs
+END

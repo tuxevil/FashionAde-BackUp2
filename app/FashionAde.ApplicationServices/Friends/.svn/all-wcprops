@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4884/FashionAde/trunk/app/FashionAde.ApplicationServices/Friends
+END
+InviteContactsService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nybble/!svn/ver/4884/FashionAde/trunk/app/FashionAde.ApplicationServices/Friends/InviteContactsService.cs
+END
+IFriendCreatorService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nybble/!svn/ver/4045/FashionAde/trunk/app/FashionAde.ApplicationServices/Friends/IFriendCreatorService.cs
+END
+IInviteContactsService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/nybble/!svn/ver/4884/FashionAde/trunk/app/FashionAde.ApplicationServices/Friends/IInviteContactsService.cs
+END
+FriendCreatorService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/nybble/!svn/ver/4045/FashionAde/trunk/app/FashionAde.ApplicationServices/Friends/FriendCreatorService.cs
+END
+UserContact.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/4061/FashionAde/trunk/app/FashionAde.ApplicationServices/Friends/UserContact.cs
+END

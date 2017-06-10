@@ -1,0 +1,9 @@
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\bin\Debug\FashionAde.OutfitUpdaterExecutor.exe.config
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\bin\Debug\FashionAde.OutfitUpdaterExecutor.exe
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\bin\Debug\FashionAde.OutfitUpdaterExecutor.pdb
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\bin\Debug\FTPClient.dll
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\bin\Debug\log4net.dll
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\bin\Debug\log4net.xml
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\obj\Debug\FashionAde.OutfitUpdaterExecutor.exe
+C:\Projects\FashionAde\app\FashionAde.OutfitUpdaterExecutor\obj\Debug\FashionAde.OutfitUpdaterExecutor.pdb

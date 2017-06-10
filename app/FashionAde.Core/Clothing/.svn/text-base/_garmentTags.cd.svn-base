@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.Clothing.Garment">
+    <Position X="1.75" Y="2.5" Width="1.5" />
+    <Members>
+      <Field Name="imageUri" Hidden="true" />
+      <Field Name="linkUri" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="tags" Hidden="true" />
+      <Field Name="thirdPartyGarments" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQQAAAEEAAAAAEAAAAAAAAABAAIAAUgAAABIAAAAAAA=</HashCode>
+      <FileName>Clothing\Garment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tags" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.GarmentTags">
+    <Position X="4.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Field Name="colors" Hidden="true" />
+      <Field Name="eventTypes" Hidden="true" />
+      <Field Name="pattern" Hidden="true" />
+      <Field Name="seasons" Hidden="true" />
+      <Field Name="shape" Hidden="true" />
+      <Field Name="silouhette" Hidden="true" />
+      <Field Name="structure" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ggAEAAICAAQAAgAEAAAAAAAUAAIAFACAAAAAgAAADAA=</HashCode>
+      <FileName>Clothing\GarmentTags.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.UserGarment">
+    <Position X="1.75" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="user" Hidden="true" />
+      <Field Name="visibility" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEABABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAQA=</HashCode>
+      <FileName>Clothing\UserGarment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Visibility" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="FashionAde.Core.Clothing.GarmentVisibility">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Clothing\GarmentVisibility.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

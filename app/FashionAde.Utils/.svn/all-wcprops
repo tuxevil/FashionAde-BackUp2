@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/nybble/!svn/ver/4908/FashionAde/trunk/app/FashionAde.Utils
+END
+FashionAde.Utils.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/FashionAde.Utils.csproj
+END
+ListHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nybble/!svn/ver/4282/FashionAde/trunk/app/FashionAde.Utils/ListHelper.cs
+END
+Bitmap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nybble/!svn/ver/4284/FashionAde/trunk/app/FashionAde.Utils/Bitmap.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nybble/!svn/ver/4629/FashionAde/trunk/app/FashionAde.Utils/app.config
+END
+ComponentRegistrar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4237/FashionAde/trunk/app/FashionAde.Utils/ComponentRegistrar.cs
+END
+StringHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nybble/!svn/ver/4815/FashionAde/trunk/app/FashionAde.Utils/StringHelper.cs
+END
+Security.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nybble/!svn/ver/4432/FashionAde/trunk/app/FashionAde.Utils/Security.cs
+END
+Validators.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nybble/!svn/ver/4908/FashionAde/trunk/app/FashionAde.Utils/Validators.cs
+END
+ServiceLocatorInitialized.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/4237/FashionAde/trunk/app/FashionAde.Utils/ServiceLocatorInitialized.cs
+END

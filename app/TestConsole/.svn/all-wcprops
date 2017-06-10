@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/nybble/!svn/ver/4711/FashionAde/trunk/app/TestConsole
+END
+TestConsole.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nybble/!svn/ver/4489/FashionAde/trunk/app/TestConsole/TestConsole.csproj
+END
+NHibernate.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nybble/!svn/ver/4711/FashionAde/trunk/app/TestConsole/NHibernate.config
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nybble/!svn/ver/4635/FashionAde/trunk/app/TestConsole/App.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nybble/!svn/ver/4607/FashionAde/trunk/app/TestConsole/Program.cs
+END

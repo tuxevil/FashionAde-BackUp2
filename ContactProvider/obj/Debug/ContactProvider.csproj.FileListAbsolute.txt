@@ -1,0 +1,13 @@
+C:\Projects\FashionAde\ContactProvider\bin\Debug\ContactProvider.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\ContactProvider.pdb
+C:\Projects\FashionAde\ContactProvider\bin\Debug\Google.GData.Client.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\Google.GData.Contacts.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\Google.GData.Extensions.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\OAuth.Net.Common.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\OAuth.Net.Components.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\OAuth.Net.Consumer.dll
+C:\Projects\FashionAde\ContactProvider\bin\Debug\OAuth.Net.ServiceProvider.dll
+C:\Projects\FashionAde\ContactProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\FashionAde\ContactProvider\obj\Debug\ContactProvider.dll
+C:\Projects\FashionAde\ContactProvider\obj\Debug\ContactProvider.pdb

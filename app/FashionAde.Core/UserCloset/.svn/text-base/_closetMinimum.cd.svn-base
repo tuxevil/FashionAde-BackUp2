@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.Closet">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="favoriteOutfit" Hidden="true" />
+      <Field Name="garments" Hidden="true" />
+      <Field Name="outfits" Hidden="true" />
+      <Field Name="privacyLevel" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="user" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Outfits" Type="FashionAde.Core.ClosetOutfit" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="3.276" />
+        <Point X="4.125" Y="3.276" />
+        <Point X="4.125" Y="5.438" />
+        <Point X="4.5" Y="5.438" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FavoriteOutfit" Type="FashionAde.Core.ClosetOutfit" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="2.505" />
+        <Point X="6.375" Y="2.505" />
+        <Point X="6.375" Y="5.562" />
+        <Point X="6" Y="5.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQhAIAEAACAAAAgAAAAIAAAABAIAAAQBCAAAAEAIQA=</HashCode>
+      <FileName>UserCloset\Closet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+      <Property Name="FavoriteOutfit" />
+      <Property Name="PrivacyLevel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Garments" />
+      <Property Name="Outfits" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.ClosetGarment">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <Members>
+      <Field Name="closet" Hidden="true" />
+      <Field Name="details" Hidden="true" />
+      <Field Name="garment" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAQAAAAAAAAABAAAAAYAAAACAAAA=</HashCode>
+      <FileName>UserCloset\ClosetGarment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Details" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.ClosetOutfit" Collapsed="true">
+    <Position X="4.5" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="closet" Hidden="true" />
+      <Field Name="details" Hidden="true" />
+      <Field Name="isFavouriteOutfit" Hidden="true" />
+      <Field Name="outfit" Hidden="true" />
+      <Field Name="rating" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACABAgAAAQIAAAAAAQAAAAEAAIAAAAiAAAA=</HashCode>
+      <FileName>UserCloset\ClosetOutfit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.GarmentDetails">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="firstWearedOn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserCloset\GarmentDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FashionAde.Core.ClosetStatus">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>UserCloset\ClosetStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FashionAde.Core.Accounts.PrivacyLevel">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAgABAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accounts\PrivacyStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

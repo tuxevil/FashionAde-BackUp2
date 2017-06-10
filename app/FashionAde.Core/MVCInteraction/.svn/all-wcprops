@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nybble/!svn/ver/4867/FashionAde/trunk/app/FashionAde.Core/MVCInteraction
+END
+LayerResponse.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/nybble/!svn/ver/3492/FashionAde/trunk/app/FashionAde.Core/MVCInteraction/LayerResponse.cs
+END
+ClosetOutfitGarmentView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nybble/!svn/ver/3686/FashionAde/trunk/app/FashionAde.Core/MVCInteraction/ClosetOutfitGarmentView.cs
+END
+ClosetOutfitView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/4867/FashionAde/trunk/app/FashionAde.Core/MVCInteraction/ClosetOutfitView.cs
+END
+MaxOutfitDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/nybble/!svn/ver/3947/FashionAde/trunk/app/FashionAde.Core/MVCInteraction/MaxOutfitDetail.cs
+END
+WebClosetGarment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/3404/FashionAde/trunk/app/FashionAde.Core/MVCInteraction/WebClosetGarment.cs
+END

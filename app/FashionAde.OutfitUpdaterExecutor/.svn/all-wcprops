@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nybble/!svn/ver/4854/FashionAde/trunk/app/FashionAde.OutfitUpdaterExecutor
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4854/FashionAde/trunk/app/FashionAde.OutfitUpdaterExecutor/app.config
+END
+FTPConnector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nybble/!svn/ver/4836/FashionAde/trunk/app/FashionAde.OutfitUpdaterExecutor/FTPConnector.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4854/FashionAde/trunk/app/FashionAde.OutfitUpdaterExecutor/Program.cs
+END
+FashionAde.OutfitUpdaterExecutor.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/nybble/!svn/ver/4836/FashionAde/trunk/app/FashionAde.OutfitUpdaterExecutor/FashionAde.OutfitUpdaterExecutor.csproj
+END

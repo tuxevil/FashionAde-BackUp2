@@ -1,0 +1,19 @@
+﻿<span style="color:#475F8F; font-weight:bold;">Hi, </span><br /><br />
+<span style="font-weight:bold; color:#000000;">I'm inviting you to rate my outfit combinations.</span><br />
+
+<table border="0" width="90%" style="background-color:#FFFFFF; margin-top:10px; margin-bottom:10px;">
+    <tr align="center">
+        <td align="center">
+            |<img src='$EmailData.GarmentsUri$$EmailData.Components[N].ImageUri$' alt='$EmailData.Components[N].Title$' style="margin:10px;" />|
+            <a href='$EmailData.OutfitUpdater.BuyUrl$' style="border:0; display:inline;" >        
+                <img src='$EmailData.OutfitUpdater.ImageUrl$' alt='$EmailData.OutfitUpdater.Name$' style="border:0; display:inline;" />
+            </a>
+        </td>
+    </tr>
+</table>
+
+<span style="color:#000000; font-weight:normal;">User comments:</span><br />
+<span style="color:#000000; font-weight:bold;">$EmailData.Comments$</span><br /><br />
+<span style="color:#000000; font-weight:normal;">Rate it Now </span><a href='[SITEURL]$EmailData.InvitationLink$' style='color:#F38333;'>here!</a><br /><br />
+<span style="color:#475F8F; font-weight:normal;">Have fun!</span><br />
+<span style="color:#475F8F; font-weight:bold;">Fashion Ade Team</span>

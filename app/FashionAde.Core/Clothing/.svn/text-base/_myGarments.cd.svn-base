@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.Clothing.Garment">
+    <Position X="8" Y="4" Width="1.5" />
+    <Members>
+      <Field Name="imageUri" Hidden="true" />
+      <Field Name="linkUri" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="tags" Hidden="true" />
+      <Field Name="thirdPartyGarments" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQQAAAEEAAAAAEAAAAAAAAABAAIAAUgAAABIAAAAAAA=</HashCode>
+      <FileName>Clothing\Garment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tags" />
+      <Property Name="Status" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ThirdPartyGarments" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.GarmentTags">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="colors" Hidden="true" />
+      <Field Name="eventTypes" Hidden="true" />
+      <Field Name="pattern" Hidden="true" />
+      <Field Name="seasons" Hidden="true" />
+      <Field Name="shape" Hidden="true" />
+      <Field Name="silouhette" Hidden="true" />
+      <Field Name="structure" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ggAEAAICAAQAAgAEAAAAAAAUAAIAFACAAAAAgAAADAA=</HashCode>
+      <FileName>Clothing\GarmentTags.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+      <Property Name="Pattern" />
+      <Property Name="Shape" />
+      <Property Name="Silouhette" />
+      <Property Name="Structure" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Colors" />
+      <Property Name="EventTypes" />
+      <Property Name="FashionFlavor" />
+      <Property Name="Seasons" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Shape" Collapsed="true">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clothing\GarmentShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Layer">
+    <Position X="7" Y="9.25" Width="1.5" />
+    <Members>
+      <Field Name="code" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clothing\GarmentLayer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Code" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Color" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clothing\Color.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Category" Collapsed="true">
+    <Position X="4.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clothing\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.OutfitUpdaterGarment">
+    <Position X="6.75" Y="6.5" Width="1.75" />
+    <Members>
+      <Field Name="buyLink" Hidden="true" />
+      <Field Name="price" Hidden="true" />
+      <Field Name="productLink" Hidden="true" />
+      <Field Name="properties" Hidden="true" />
+      <Field Name="suffix" Hidden="true" />
+      <Field Name="thirdParty" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAIBIAAAAQAQAAAAEAAAIAQAAAAEAAAAACAAAAAiAAA=</HashCode>
+      <FileName>Clothing\OutfitUpdaterGarment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Pattern" Collapsed="true">
+    <Position X="4.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clothing\Pattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Silouhette">
+    <Position X="4" Y="6" Width="1.5" />
+    <Members>
+      <Field Name="availableColors" Hidden="true" />
+      <Field Name="availablePatterns" Hidden="true" />
+      <Field Name="category" Hidden="true" />
+      <Field Name="fashionFlavors" Hidden="true" />
+      <Field Name="imageUri" Hidden="true" />
+      <Field Name="importanceOrder" Hidden="true" />
+      <Field Name="layers" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAgAAAAAAAIgUAACIFgAACAI=</HashCode>
+      <FileName>Clothing\Silouhette.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Layers" />
+      <Property Name="AvailableColors" />
+      <Property Name="AvailablePatterns" />
+      <Property Name="FashionFlavors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Structure" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clothing\Structure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.ThirdPartyGarment" BaseTypeListCollapsed="true">
+    <Position X="11" Y="4" Width="1.75" />
+    <Members>
+      <Field Name="garment" Hidden="true" />
+      <Field Name="imageUri" Hidden="true" />
+      <Field Name="linkUri" Hidden="true" />
+      <Field Name="thirdParty" Hidden="true" />
+      <Field Name="thirdPartyCode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAQBAQAFAQgAAQAIAAAAAAA=</HashCode>
+      <FileName>Clothing\ThirdPartyGarment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.UserGarment">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="user" Hidden="true" />
+      <Field Name="visibility" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEABABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAQA=</HashCode>
+      <FileName>Clothing\UserGarment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Visibility" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.EventType" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.FashionFlavor" Collapsed="true">
+    <Position X="1.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FashionFlavor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FashionAde.Core.Clothing.GarmentVisibility" Collapsed="true">
+    <Position X="9.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Clothing\GarmentVisibility.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FashionAde.Core.Clothing.GarmentStatus" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAgBAAACAAAAAAAAABAAAAAAAAAQA=</HashCode>
+      <FileName>Clothing\GarmentStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FashionAde.Core.Clothing.LayerCode" Collapsed="true">
+    <Position X="7" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAApEG4BwA=</HashCode>
+      <FileName>Clothing\LayerCode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FashionAde.Core.Clothing.Season">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEggAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Clothing\Season.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

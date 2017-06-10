@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="FashionAde.Core.OutfitEngine.ColorBlendingRules">
+    <Position X="1.5" Y="2.75" Width="2.25" />
+    <Members>
+      <Field Name="analogousColor" Hidden="true" />
+      <Field Name="complimentaryColor" Hidden="true" />
+      <Field Name="monotoneColor" Hidden="true" />
+      <Field Name="neutralColor" Hidden="true" />
+      <Field Name="neutralPrimaryColor" Hidden="true" />
+      <Field Name="neutralSecondaryColor" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQCBAAEIAACACAAAAAAAAAAAAACAAAACAAAAAgAAgQA=</HashCode>
+      <FileName>OutfitEngine\ColorBlendingRules.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.OutfitEngine.StyleRules">
+    <Position X="5" Y="2.75" Width="2.5" />
+    <Members>
+      <Field Name="accessoriesAmount" Hidden="true" />
+      <Field Name="colorBlending" Hidden="true" />
+      <Field Name="fashionFlavor" Hidden="true" />
+      <Field Name="maximumGarments" Hidden="true" />
+      <Field Name="maximumLayers" Hidden="true" />
+      <Field Name="minimumGarments" Hidden="true" />
+      <Field Name="minimumLayers" Hidden="true" />
+      <Field Name="patterns" Hidden="true" />
+      <Field Name="shapes" Hidden="true" />
+      <Field Name="showPartnerGarments" Hidden="true" />
+      <Field Name="structures" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Structures" Type="FashionAde.Core.OutfitEngine.RulePair&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.125" Y="4.553" />
+        <Point X="7.125" Y="6.25" />
+        <Point X="6.75" Y="6.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Shapes" Type="FashionAde.Core.OutfitEngine.RulePair&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="4.133" />
+        <Point X="4.625" Y="4.133" />
+        <Point X="4.625" Y="6.25" />
+        <Point X="5.25" Y="6.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAIEAAACAABAICAAQAAkICAEBCAgBAAAEAAIAJAABAA=</HashCode>
+      <FileName>OutfitEngine\StyleRules.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ColorBlending" />
+      <Property Name="FashionFlavor" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Patterns" />
+      <Property Name="Structures" />
+      <Property Name="Shapes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.OutfitEngine.RulePair&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OutfitEngine\RulePair.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.FashionFlavor">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FashionFlavor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

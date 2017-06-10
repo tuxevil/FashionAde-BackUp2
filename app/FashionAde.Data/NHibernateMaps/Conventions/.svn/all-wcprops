@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4676/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions
+END
+HasManyToManyConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/nybble/!svn/ver/4676/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/HasManyToManyConvention.cs
+END
+TableNameConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/nybble/!svn/ver/2584/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/TableNameConvention.cs
+END
+PrimaryKeyConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/nybble/!svn/ver/4070/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/PrimaryKeyConvention.cs
+END
+ColumnNullabiltyConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/nybble/!svn/ver/3010/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/ColumnNullabiltyConvention.cs
+END
+ReferenceConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/nybble/!svn/ver/4363/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/ReferenceConvention.cs
+END
+SubClassConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/nybble/!svn/ver/4551/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/SubClassConvention.cs
+END
+HasManyConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nybble/!svn/ver/4397/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/HasManyConvention.cs
+END
+ForeignKeyConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/nybble/!svn/ver/3866/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/ForeignKeyConvention.cs
+END
+EnumConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nybble/!svn/ver/3008/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/EnumConvention.cs
+END
+ManyToManyTableNameConvention.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/nybble/!svn/ver/2584/FashionAde/trunk/app/FashionAde.Data/NHibernateMaps/Conventions/ManyToManyTableNameConvention.cs
+END

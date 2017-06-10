@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/nybble/!svn/ver/4926/FashionAde/trunk/app/FashionAde.Core
+END
+ClassDiagram1.cd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nybble/!svn/ver/3420/FashionAde/trunk/app/FashionAde.Core/ClassDiagram1.cd
+END
+IUserDiscriminator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nybble/!svn/ver/2800/FashionAde/trunk/app/FashionAde.Core/IUserDiscriminator.cs
+END
+FashionFlavor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nybble/!svn/ver/4668/FashionAde/trunk/app/FashionAde.Core/FashionFlavor.cs
+END
+EventType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nybble/!svn/ver/4867/FashionAde/trunk/app/FashionAde.Core/EventType.cs
+END
+FashionAde.Core.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4755/FashionAde/trunk/app/FashionAde.Core/FashionAde.Core.csproj
+END
+IClosetSelection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nybble/!svn/ver/2800/FashionAde/trunk/app/FashionAde.Core/IClosetSelection.cs
+END

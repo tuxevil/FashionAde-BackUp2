@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.ContentManagement.Content">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="approvedBy" Hidden="true" />
+      <Field Name="assignedTo" Hidden="true" />
+      <Field Name="body" Hidden="true" />
+      <Field Name="category" Hidden="true" />
+      <Field Name="editedBy" Hidden="true" />
+      <Field Name="flavors" Hidden="true" />
+      <Field Name="keywords" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="title" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+      <Field Name="userFriendlyTitle" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQyAAAEEQAIAAEACEQABABUAAQABgAAACQApAAQAmQA=</HashCode>
+      <FileName>ContentManagement\Content.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+      <Property Name="Type" />
+      <Property Name="AssignedTo" />
+      <Property Name="ApprovedBy" />
+      <Property Name="Category" />
+      <Property Name="EditedBy" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Flavors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.ContentManagement.ContentCategory">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <Members>
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContentManagement\ContentCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.ContentManagement.Publisher">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="email" Hidden="true" />
+      <Field Name="firstName" Hidden="true" />
+      <Field Name="lastName" Hidden="true" />
+      <Field Name="role" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAEBAACBAAAAgEAAAABAAgAAAAAAAAACACAAAAAg=</HashCode>
+      <FileName>ContentManagement\Publisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.FashionFlavor">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <Members>
+      <Field Name="image" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAEAAEABAAAAAAAAAAAAA=</HashCode>
+      <FileName>FashionFlavor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FashionAde.Core.ContentManagement.ContentType">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAIQAAAgAAAAAAIAAAAAAVAAAAAAAAABAAA=</HashCode>
+      <FileName>ContentManagement\ContentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FashionAde.Core.ContentManagement.ContentStatus">
+    <Position X="2" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContentManagement\ContentStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

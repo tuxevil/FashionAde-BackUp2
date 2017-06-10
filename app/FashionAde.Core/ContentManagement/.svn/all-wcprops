@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nybble/!svn/ver/4410/FashionAde/trunk/app/FashionAde.Core/ContentManagement
+END
+ContentExceptions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/nybble/!svn/ver/4410/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentExceptions.cs
+END
+ContentType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nybble/!svn/ver/3927/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentType.cs
+END
+ContentStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/4363/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentStatus.cs
+END
+ContentPublishedFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nybble/!svn/ver/4410/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentPublishedFactory.cs
+END
+ContentBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nybble/!svn/ver/4406/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentBase.cs
+END
+ContentCategory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nybble/!svn/ver/3927/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentCategory.cs
+END
+Content.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nybble/!svn/ver/4410/FashionAde/trunk/app/FashionAde.Core/ContentManagement/Content.cs
+END
+ContentPublished.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nybble/!svn/ver/4320/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentPublished.cs
+END
+ContentSectionBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/nybble/!svn/ver/4363/FashionAde/trunk/app/FashionAde.Core/ContentManagement/ContentSectionBase.cs
+END
+_content.cd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/3756/FashionAde/trunk/app/FashionAde.Core/ContentManagement/_content.cd
+END

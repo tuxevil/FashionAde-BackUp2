@@ -1,0 +1,34 @@
+9
+
+dir
+4929
+http://sourcesafe.nybblenetwork.com:8080/svn/nybble/FashionAde/trunk/db
+http://sourcesafe.nybblenetwork.com:8080/svn/nybble
+
+
+
+2010-07-01T18:13:41.146282Z
+4929
+leonardo.rodriguez
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+420dda77-6af4-1841-a513-76830d1e3cad
+
+FashionAde.Scripts
+dir
+
+Scripts
+dir
+

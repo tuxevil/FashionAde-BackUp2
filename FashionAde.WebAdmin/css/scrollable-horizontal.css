@@ -1,0 +1,66 @@
+﻿/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 580px;
+	height:180px;	
+
+	/* custom decorations */
+	/*border:1px solid #ccc;*/
+	background:url(/img/global/gradient/h300.png) repeat-x;		
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;	
+	margin-top:15px; /* Added. Apply to all slider images! */	
+}
+
+/* single scrollable item */
+.scrollable img  {
+	/*float:left */
+	/*margin:0 5px 20px 21px;*/
+	/*margin:0 5px 5px 5px;*/
+	
+	margin:0 auto 5px auto;	
+	
+	background-color:#fff;
+	padding-top:2px;	
+	/*border:1px solid #ccc;*/		
+	cursor:pointer;
+	/*width:100px;
+	height:100px;*/
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+	border:1px solid #F5A162;
+	/*z-index:9999;*/ 
+	position:relative;	
+}
+
+
+.sliderDiv
+{
+	clear:both;
+	border:solid 1px #D3D3D3; 		
+	/*height:130px;*/
+	height:175px;
+	padding-left:15px;		
+}

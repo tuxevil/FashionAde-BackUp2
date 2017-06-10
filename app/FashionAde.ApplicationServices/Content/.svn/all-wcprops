@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4410/FashionAde/trunk/app/FashionAde.ApplicationServices/Content
+END
+ContentService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/nybble/!svn/ver/4407/FashionAde/trunk/app/FashionAde.ApplicationServices/Content/ContentService.cs
+END
+IContentManagerService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/nybble/!svn/ver/4408/FashionAde/trunk/app/FashionAde.ApplicationServices/Content/IContentManagerService.cs
+END
+IContentService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nybble/!svn/ver/4407/FashionAde/trunk/app/FashionAde.ApplicationServices/Content/IContentService.cs
+END
+ContentManagerService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nybble/!svn/ver/4410/FashionAde/trunk/app/FashionAde.ApplicationServices/Content/ContentManagerService.cs
+END

@@ -1,0 +1,22 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C3377EC9-8721-4C15-95AF-B974D36873B2/d:Views/d:Rating/f:FriendRate.ascx" caret="2066" fromTop="29" />
+      <File id="C3377EC9-8721-4C15-95AF-B974D36873B2/f:Web.config" caret="2745" fromTop="27" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+</Configuration>

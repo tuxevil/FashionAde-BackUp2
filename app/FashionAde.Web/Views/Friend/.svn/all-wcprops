@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nybble/!svn/ver/4887/FashionAde/trunk/app/FashionAde.Web/Views/Friend
+END
+FriendList.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4430/FashionAde/trunk/app/FashionAde.Web/Views/Friend/FriendList.ascx
+END
+FriendMaster.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/4887/FashionAde/trunk/app/FashionAde.Web/Views/Friend/FriendMaster.ascx
+END
+Index.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nybble/!svn/ver/4677/FashionAde/trunk/app/FashionAde.Web/Views/Friend/Index.aspx
+END
+NewFriendRow.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/4132/FashionAde/trunk/app/FashionAde.Web/Views/Friend/NewFriendRow.ascx
+END
+NewFriendList.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/nybble/!svn/ver/4132/FashionAde/trunk/app/FashionAde.Web/Views/Friend/NewFriendList.ascx
+END
+FriendRow.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4430/FashionAde/trunk/app/FashionAde.Web/Views/Friend/FriendRow.ascx
+END
+ApproveNewFriends.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/4116/FashionAde/trunk/app/FashionAde.Web/Views/Friend/ApproveNewFriends.ascx
+END

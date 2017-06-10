@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.WishGarment">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <Members>
+      <Field Name="garment" Hidden="true" />
+      <Field Name="wantedOn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAQAAAAEAA=</HashCode>
+      <FileName>UserCloset\WishGarment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Garment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.WishList">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="garments" Hidden="true" />
+      <Field Name="user" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAEAIQA=</HashCode>
+      <FileName>UserCloset\WishList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Garments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Garment">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="imageUri" Hidden="true" />
+      <Field Name="linkUri" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="tags" Hidden="true" />
+      <Field Name="thirdPartyGarments" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQQAAAEEAAAAAEAAAAAAAAABAAIAAUgAAABIAAAAAAA=</HashCode>
+      <FileName>Clothing\Garment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FashionAde.Core.Closet">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="favoriteOutfit" Hidden="true" />
+      <Field Name="garments" Hidden="true" />
+      <Field Name="outfits" Hidden="true" />
+      <Field Name="privacyLevel" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="user" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQhAIAEAACAAAAgAAAAIAAAABAIAAAQBCAAAAEAIQA=</HashCode>
+      <FileName>UserCloset\Closet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FashionAde.Core.Services.IWishListService">
+    <Position X="4.5" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Services\IWishListService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Garment" />
+      <Property Name="Closet" />
+    </ShowAsAssociation>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

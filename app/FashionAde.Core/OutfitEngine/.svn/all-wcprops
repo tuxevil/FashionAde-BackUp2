@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nybble/!svn/ver/4854/FashionAde/trunk/app/FashionAde.Core/OutfitEngine
+END
+ColorBlendingRules.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nybble/!svn/ver/3059/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/ColorBlendingRules.cs
+END
+_outfitEngine.cd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nybble/!svn/ver/2844/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/_outfitEngine.cd
+END
+PreOutfit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nybble/!svn/ver/4854/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/PreOutfit.cs
+END
+Combination.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4412/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/Combination.cs
+END
+RulePair.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nybble/!svn/ver/3420/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/RulePair.cs
+END
+PreGarment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4630/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/PreGarment.cs
+END
+StyleRule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nybble/!svn/ver/3051/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/StyleRule.cs
+END
+PreCombination.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/nybble/!svn/ver/4630/FashionAde/trunk/app/FashionAde.Core/OutfitEngine/PreCombination.cs
+END

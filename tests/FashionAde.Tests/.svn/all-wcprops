@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/nybble/!svn/ver/4919/FashionAde/trunk/tests/FashionAde.Tests
+END
+FashionAde.Tests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4654/FashionAde/trunk/tests/FashionAde.Tests/FashionAde.Tests.csproj
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nybble/!svn/ver/4635/FashionAde/trunk/tests/FashionAde.Tests/App.config
+END
+Hibernate.Test.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nybble/!svn/ver/4412/FashionAde/trunk/tests/FashionAde.Tests/Hibernate.Test.cfg.xml
+END
+ServiceLocatorInitializer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/nybble/!svn/ver/2584/FashionAde/trunk/tests/FashionAde.Tests/ServiceLocatorInitializer.cs
+END
+Hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nybble/!svn/ver/2584/FashionAde/trunk/tests/FashionAde.Tests/Hibernate.cfg.xml
+END

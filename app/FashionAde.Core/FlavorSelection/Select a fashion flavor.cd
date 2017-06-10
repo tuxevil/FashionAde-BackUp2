@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="FashionAde.Core.TemporalUser">
+    <Position X="5.25" Y="8.25" Width="1.5" />
+    <Members>
+      <Field Name="addedGarments" Hidden="true" />
+      <Field Name="referralTracking" Hidden="true" />
+      <Field Name="whishedGarments" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAIAAAAAAAAAAAAAABAAAAAQAAACAAAAg=</HashCode>
+      <FileName>TemporalUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.Wording">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <Members>
+      <Field Name="description" Hidden="true" />
+      <Field Name="eventType" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAIAQAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wording.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EventType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.UserFlavor">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <Members>
+      <Field Name="flavor" Hidden="true" />
+      <Field Name="weight" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>UserFlavor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Flavor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.EventType">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.BrandSet">
+    <Position X="8" Y="8.25" Width="1.5" />
+    <Members>
+      <Field Name="description" Hidden="true" />
+      <Field Name="flavor" Hidden="true" />
+      <Field Name="imageUri" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAgAAAAIAAAAAAAAAAAAAgAAAAIAAAAAAA=</HashCode>
+      <FileName>BrandSet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Flavor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.StylePhotograph">
+    <Position X="8" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="description" Hidden="true" />
+      <Field Name="flavor" Hidden="true" />
+      <Field Name="imageUri" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAgAAAAIAAAAAAAAAAAAAgAAAAIAAAAAAA=</HashCode>
+      <FileName>StylePhotograph.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Flavor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.FashionFlavor">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <Members>
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FashionFlavor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FashionAde.Core.BasicUser">
+    <Position X="5.25" Y="6.75" Width="1.5" />
+    <Members>
+      <Field Name="eventTypes" Hidden="true" />
+      <Field Name="invitedBy" Hidden="true" />
+      <Field Name="userContacts" Hidden="true" />
+      <Field Name="userFlavors" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BEAAAEACAABAAgAAAAAAAAAAAAAAAAAAAAAAAABAAAE=</HashCode>
+      <FileName>BasicUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="UserFlavors" />
+      <Property Name="EventTypes" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

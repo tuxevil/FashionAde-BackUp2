@@ -1,0 +1,82 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="FashionAde.WebAdmin.Controllers" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />    
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css&2.8.0r4/build/base/base-min.css" />
+    <link href="<%= ResolveUrl("~") %>css/site.css" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveUrl("~") %>css/popup.css" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveUrl("~") %>css/jquery/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+        <title>FashionAde</title>
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <asp:ContentPlaceHolder ID="OverlayPlaceHolder" runat="server" />
+    
+    <input id="hidMessage" type="hidden" rel="#divMessage" />
+
+    <div id="divMessage" class="apple_overlay"> 
+        <img src='../../img/warning.gif' />
+        <span id="spnMsg"></span>	
+    </div> 
+    
+    <div id="doc2" class="yui-t7"> 
+        <div id="hd" role="banner">            
+            <div id="divLogo">
+                <a href="<%= Url.RouteUrl(new { controller = "Home", action= "Index"}) %>" >
+                    <img  id="imgLogo" src="/img/logo/logoBeta.gif" alt="Fashion Ade" style="width:310px; height:74px;" />            
+                </a>
+            </div>
+            
+            <div id="divSignIn">
+                
+                <%
+                    if (ViewData["UserName"] == null)
+                    {%>               
+                        <span class="spnWelcome">WELCOME</span> 
+                        <br /><br /><span class="spnMaster" style="float: right">WOULD YOU LIKE TO <a href="<%= Url.RouteUrl(new { controller = "LogIn", action= "Index"}) %>" >SIGN IN?</a></span>
+                    <%}
+                    else
+                    {
+                        string username = ViewData["UserName"].ToString().ToUpper();%>
+                        <span class="spnWelcome"><%=username %></span><span class="spnWelcome">WELCOME</span><br /><br /> <a href="<%= Url.RouteUrl(new { controller = "LogIn", action= "LogOut"}) %>" style="float:right">SIGN OUT</a>
+                    <%}%>
+            </div>
+            
+            <div class="headerLine"></div>
+            
+            <div id="divMenu" class="headerMenu">                
+                <div id="divBuildCloset" class="menuDivLeft"><a id="lnkBuildCloset" class="menuLinkLeft" href="<%= Url.RouteUrl(new { controller = "Grid", action= "Index"}) %>">CMS</a></div>
+                <div id="div1" class="menuDivLeft"><a id="A1" class="menuLinkLeft" href="<%= Url.RouteUrl(new { controller = "Execute", action= "Index" }) %>">Feed Updater</a></div>
+             </div>
+        </div>
+        <div id="bd" role="main">              
+            <div class="yui-g">
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" />
+            </div> 
+        </div> 
+        <div id="ft" role="contentinfo">
+            <div id="divCopyright" style="width:100%; text-align:center;">Copyright © 2010 <a href="http://www.abundantcloset.com" target="_blank" style="display:inline; float:none">Abundant Closet LLC</a>- All rights reserved.</div>            
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="<%= ResolveUrl("~") %>js/jquery-1.3.2.min.js"></script>        
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script> 
+    <script type="text/javascript" src="<%= ResolveUrl("~") %>js/jquery-ui-1.7.2.custom.min.js"></script>    
+    
+    <script type="text/javascript" src="<%= Url.Content("~/js/tiny_mce.js") %>"></script>
+    <script type="text/javascript" src="<%= Url.Content("~/js/jquery.tinymce.js") %>"></script>    
+    <script type="text/javascript" src="<%= Url.Content("~/js/jquery.validate.min.js") %>"></script>    
+    <script type="text/javascript" src="<%= Url.Content("~/js/xVal.jquery.validate.js") %>"></script>    
+    <script type="text/javascript" src="<%= Url.Content("~/js/xVal.extensions.js") %>"></script>    
+    <script src='<%= Url.Content("~/js/jquery.toJSON.js") %>' type="text/javascript" ></script>
+        
+    <asp:ContentPlaceHolder ID="ScriptsPlaceHolder" runat="server" />
+</body>
+</html>

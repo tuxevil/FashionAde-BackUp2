@@ -1,0 +1,14 @@
+﻿<span style="color:#000000; font-weight:bold;">Comments:</span><br /><br />
+<span style="color:#000000; font-weight:normal;">$ConfirmRatingData.Comments$</span>
+
+<table border="0" width="90%" style="background-color:#FFFFFF; margin-top:10px; margin-bottom:10px;">
+    <tr>
+        <td align="center">
+            |<img src='$ConfirmRatingData.GarmentsUri$$ConfirmRatingData.Components[N].ImageUri$' alt='$ConfirmRatingData.Components[N].Title$' />|
+        </td>
+    </tr>
+    <tr align="left">
+        <img src='$ConfirmRatingData.RatingImg$' alt='$ConfirmRatingData.RatingText$' />
+    </tr>
+</table>
+<span style="color:#000000; font-weight:normal;">$ConfirmRatingData.RatingText$</span><br /><br />

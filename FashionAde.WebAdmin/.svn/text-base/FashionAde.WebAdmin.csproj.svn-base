@@ -1,0 +1,774 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DC48987-6BF6-446D-9FDC-C1A19C626B67}</ProjectGuid>
+    <ProjectTypeGuids>{f85e285d-a4e0-4152-9332-ab1d724d3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionAde.WebAdmin</RootNamespace>
+    <AssemblyName>FashionAde.WebAdmin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator.WindsorAdapter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\CommonServiceLocator.WindsorAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=1.0.0.594, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.1.272, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MCImageManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c44e5db63f98f2c6">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\MCImageManager.dll</HintPath>
+    </Reference>
+    <Reference Include="MCManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f6be35de8e27c276">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\MCManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b5f559ae0ac4e006, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\Microsoft.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib, Version=1.0.0.99, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib.Castle, Version=1.0.0.99, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\MvcContrib.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib.FluentHtml, Version=1.0.0.99, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\MvcContrib.FluentHtml.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\MySql.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator, Version=1.2.0.3001, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpArch, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\sharp-architecture\SharpArch.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="xVal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f8fbed92c68c4006, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\xVal.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="js\plugins\imagemanager\plugins\CustomInfoExample\src\csharp\CustomInfoExamplePlugin.cs" />
+    <Compile Include="js\plugins\imagemanager\plugins\ExternalAuthenticator\src\csharp\ExternalAuthenticator.cs" />
+    <Compile Include="js\plugins\imagemanager\plugins\Favorites\src\csharp\FavoritePlugin.cs" />
+    <Compile Include="js\plugins\imagemanager\plugins\History\src\csharp\HistoryPlugin.cs" />
+    <Compile Include="js\plugins\imagemanager\plugins\Uploaded\src\csharp\UploadedPlugin.cs" />
+    <Compile Include="js\plugins\imagemanager\plugins\_Template\src\csharp\TemplatePlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\app\FashionAde.ApplicationServices\FashionAde.ApplicationServices.csproj">
+      <Project>{08E9C4A6-6086-4D9E-8D27-41D4159CF95F}</Project>
+      <Name>FashionAde.ApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\app\FashionAde.Core\FashionAde.Core.csproj">
+      <Project>{26375851-E958-47FE-B328-B7CF26DFD684}</Project>
+      <Name>FashionAde.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\app\FashionAde.Data\FashionAde.Data.csproj">
+      <Project>{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}</Project>
+      <Name>FashionAde.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\app\FashionAde.Utils\FashionAde.Utils.csproj">
+      <Project>{06B4EBD9-5FFE-451F-8022-D84868B470E1}</Project>
+      <Name>FashionAde.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionAde.WebAdmin.Controllers\FashionAde.WebAdmin.Controllers.csproj">
+      <Project>{0677E771-EC31-4F40-9354-80E07918B578}</Project>
+      <Name>FashionAde.WebAdmin.Controllers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Site.css" />
+    <Content Include="css\jquery.Jcrop.css" />
+    <Content Include="css\jquery.rating.css" />
+    <Content Include="css\jquery\images\blue.png" />
+    <Content Include="css\jquery\images\button_left.gif" />
+    <Content Include="css\jquery\images\button_right.gif" />
+    <Content Include="css\jquery\images\hori_large.png" />
+    <Content Include="css\jquery\images\ico_slider.gif" />
+    <Content Include="css\jquery\images\tab.gif" />
+    <Content Include="css\jquery\images\tab_selected.gif" />
+    <Content Include="css\jquery\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\jquery\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\jquery\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\jquery\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\jquery\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\jquery\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\jquery\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jquery\jquery-ui-1.7.2.custom.css" />
+    <Content Include="css\popup.css" />
+    <Content Include="css\scrollable-buttons.css" />
+    <Content Include="css\scrollable-horizontal.css" />
+    <Content Include="css\site.css" />
+    <Content Include="css\tabs.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="img\browse.jpg" />
+    <Content Include="img\close.png" />
+    <Content Include="img\dropdown.jpg" />
+    <Content Include="img\f.PNG" />
+    <Content Include="img\img_forgot_pass.gif" />
+    <Content Include="img\IMG_fun.gif" />
+    <Content Include="img\img_header_item.gif" />
+    <Content Include="img\img_shoes.gif" />
+    <Content Include="img\img_steps1.gif" />
+    <Content Include="img\img_steps2.gif" />
+    <Content Include="img\img_steps3.gif" />
+    <Content Include="img\img_steps4.gif" />
+    <Content Include="img\Jcrop.gif" />
+    <Content Include="img\logo\fashion_ade.gif" />
+    <Content Include="img\logo\logo.gif" />
+    <Content Include="img\msg_shadow.gif" />
+    <Content Include="img\quiz_logo.jpg" />
+    <Content Include="img\registrationValitaditonAlert.JPG" />
+    <Content Include="img\registrationValitaditonOk.JPG" />
+    <Content Include="img\remove_item.jpg" />
+    <Content Include="img\shadow.gif" />
+    <Content Include="img\shadow_down.GIF" />
+    <Content Include="img\shadow_up.gif" />
+    <Content Include="img\trash.png" />
+    <Content Include="img\warning.gif" />
+    <Content Include="img\white.png" />
+    <Content Include="img\x.PNG" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="res\mail\images\azul.gif" />
+    <Content Include="res\mail\images\fdoHeader.gif" />
+    <Content Include="res\mail\images\gris.gif" />
+    <Content Include="res\mail\images\header.gif" />
+    <Content Include="res\mail\template.htm" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Execute\Index.aspx" />
+    <Content Include="css\tinymce.custom.css" />
+    <Content Include="css\example.css" />
+    <None Include="editor_details.htm" />
+    <Content Include="js\plugins\imagemanager\mime.types" />
+    <None Include="js\plugins\imagemanager\pages\im\js\plupload\plupload.silverlight.xap" />
+    <None Include="js\plugins\imagemanager\plugins\CustomInfoExample\src\build.bat" />
+    <None Include="js\plugins\imagemanager\plugins\ExternalAuthenticator\auth_example.jsp" />
+    <None Include="js\plugins\imagemanager\plugins\ExternalAuthenticator\auth_example.php" />
+    <None Include="js\plugins\imagemanager\plugins\ExternalAuthenticator\src\csharp\build.bat" />
+    <None Include="js\plugins\imagemanager\plugins\Favorites\src\build.bat" />
+    <None Include="js\plugins\imagemanager\plugins\History\src\build.bat" />
+    <None Include="js\plugins\imagemanager\plugins\Uploaded\src\build.bat" />
+    <None Include="js\plugins\imagemanager\plugins\_Template\src\csharp\build.bat" />
+    <None Include="js\plugins\imagemanager\plugins\_Template\src\vb\build.bat" />
+    <Content Include="img\buttons\btn_login.gif" />
+    <Content Include="img\logo\logoBeta.gif" />
+    <Content Include="js\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="js\jquery.tinymce.js" />
+    <Content Include="js\jquery.toJSON.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\langs\en.js" />
+    <Content Include="js\MicrosoftAjax.debug.js" />
+    <Content Include="js\MicrosoftAjax.js" />
+    <Content Include="js\MicrosoftMvcAjax.debug.js" />
+    <Content Include="js\MicrosoftMvcAjax.js" />
+    <Content Include="js\MicrosoftMvcValidation.js" />
+    <Content Include="js\plugins\advhr\css\advhr.css" />
+    <Content Include="js\plugins\advhr\editor_plugin.js" />
+    <Content Include="js\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="js\plugins\advhr\js\rule.js" />
+    <Content Include="js\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="js\plugins\advhr\rule.htm" />
+    <Content Include="js\plugins\advimage\css\advimage.css" />
+    <Content Include="js\plugins\advimage\editor_plugin.js" />
+    <Content Include="js\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="js\plugins\advimage\image.htm" />
+    <Content Include="js\plugins\advimage\img\sample.gif" />
+    <Content Include="js\plugins\advimage\js\image.js" />
+    <Content Include="js\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="js\plugins\advlink\css\advlink.css" />
+    <Content Include="js\plugins\advlink\editor_plugin.js" />
+    <Content Include="js\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="js\plugins\advlink\js\advlink.js" />
+    <Content Include="js\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="js\plugins\advlink\link.htm" />
+    <Content Include="js\plugins\advlist\editor_plugin.js" />
+    <Content Include="js\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="js\plugins\autoresize\editor_plugin.js" />
+    <Content Include="js\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="js\plugins\autosave\editor_plugin.js" />
+    <Content Include="js\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="js\plugins\autosave\langs\en.js" />
+    <Content Include="js\plugins\bbcode\editor_plugin.js" />
+    <Content Include="js\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="js\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="js\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="js\plugins\directionality\editor_plugin.js" />
+    <Content Include="js\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="js\plugins\imagemanager\changelog.txt" />
+    <Content Include="js\plugins\imagemanager\css\default.aspx" />
+    <Content Include="js\plugins\imagemanager\default.aspx" />
+    <Content Include="js\plugins\imagemanager\editor_plugin.js" />
+    <Content Include="js\plugins\imagemanager\editor_plugin_src.js" />
+    <Content Include="js\plugins\imagemanager\examples.html" />
+    <Content Include="js\plugins\imagemanager\index.aspx" />
+    <Content Include="js\plugins\imagemanager\js\default.aspx" />
+    <Content Include="js\plugins\imagemanager\js\index.aspx" />
+    <Content Include="js\plugins\imagemanager\js\mcimagemanager.js" />
+    <Content Include="js\plugins\imagemanager\js\mcimagemanager_src.js" />
+    <Content Include="js\plugins\imagemanager\language\default.aspx" />
+    <Content Include="js\plugins\imagemanager\language\im\download_more.txt" />
+    <Content Include="js\plugins\imagemanager\language\im\en.xml" />
+    <Content Include="js\plugins\imagemanager\language\index.aspx" />
+    <Content Include="js\plugins\imagemanager\login_forms_auth.aspx" />
+    <Content Include="js\plugins\imagemanager\login_session_auth.aspx" />
+    <Content Include="js\plugins\imagemanager\pages\im\createdir.html" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\core.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\dialog.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\dropmenu.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\forms.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\imageeditor.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\imagemanager.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\toolbar.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\view.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\viewmodes.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\css\window_clearlooks2.css" />
+    <Content Include="js\plugins\imagemanager\pages\im\edit.html" />
+    <Content Include="js\plugins\imagemanager\pages\im\flvplayer\flvPlayer.swf" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\act.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\alert-small.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\alert.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\avi.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\check_arrow.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\alert_error.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\alert_info.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\alert_warn.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\bottom_left.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\bottom_middle.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\bottom_right.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\button.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\buttons.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\middle_left.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\middle_right.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\statusbar_left.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\statusbar_middle.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\statusbar_resize.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\statusbar_right.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\top_chromeless_left.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\top_chromeless_middle.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\top_chromeless_right.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\top_left.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\top_middle.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\top_middle_fg.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\top_right.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\clearlooks2\transparent.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\close.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\dcr.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\dialog-icon-edit.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\dialog-icon-newfolder.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\dialog-icon-upload.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\dialog-top.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\editimage.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\filelist-border.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\filelist-headbg.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\filelist-headbg2.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\first.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\flash.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder-bg.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder-bg.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder-bottom-bg.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder-middle-bg.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder-small.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder-top-bg.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\folder_big.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\gallery.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\google_gears_logo.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\accept.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\add.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\cancel.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\category-closed.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\category-open.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\crop.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\filemanager.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\flip_h.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\flip_v.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\help.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\newdoc.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\newfolder.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\picture_save.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\reload.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\resize.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\revert.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\rotate_ac.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\rotate_c.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\save.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\settings.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\toggle_selection.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\icons\up.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\im-botleft.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\im-delete.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\im-edit.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\im-info.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\im-topleft.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\im-topright.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\im.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\imageeditor\bg.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\imageeditor\editarea.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\img_generic.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\insertimage.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\last.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\left.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\left.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\left_disabled.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\loading.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\loading_bg.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\navdesc_bg.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\parent_big.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\progress.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\qt.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\right.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\right.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\right_disabled.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\rm.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\selection_corner.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\separator.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\submit-cancel.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\submit-default.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\submit-delete.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\submit-grey.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\submit-greyWide.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\submit-wide.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\textlist.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\toolbar.png" />
+    <Content Include="js\plugins\imagemanager\pages\im\img\transparent.gif" />
+    <Content Include="js\plugins\imagemanager\pages\im\index.html" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\createdir.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\edit.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\imagemanager.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.cleanname.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.cooquery.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.dialog.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.dialog.status.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.domutils.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.dropmenu.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.i18n.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.imageselection.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.imageutils.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.json.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.scrollto.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.template.ext.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.template.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\jquery\jquery.uri.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\plupload\gears_init.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\plupload\plupload.flash.swf" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\plupload\plupload.full.min.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\upload.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\utils\basemanager.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\utils\domain.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\utils\fixpng.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\utils\gears_init.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\utils\rpc.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\utils\swfobject.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\utils\tinymce.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\js\view.js" />
+    <Content Include="js\plugins\imagemanager\pages\im\resources.xml" />
+    <Content Include="js\plugins\imagemanager\pages\im\upload.html" />
+    <Content Include="js\plugins\imagemanager\pages\im\view.html" />
+    <Content Include="js\plugins\imagemanager\plugins\CustomInfoExample\bin\CustomInfoExamplePlugin.dll" />
+    <Content Include="js\plugins\imagemanager\plugins\CustomInfoExample\fm_example.html" />
+    <Content Include="js\plugins\imagemanager\plugins\CustomInfoExample\fm_tinymce_example.htm" />
+    <Content Include="js\plugins\imagemanager\plugins\CustomInfoExample\im_example.html" />
+    <Content Include="js\plugins\imagemanager\plugins\CustomInfoExample\im_tinymce_example.htm" />
+    <Content Include="js\plugins\imagemanager\plugins\ExternalAuthenticator\auth_example.asp" />
+    <Content Include="js\plugins\imagemanager\plugins\ExternalAuthenticator\bin\ExternalAuthenticator.dll" />
+    <Content Include="js\plugins\imagemanager\plugins\ExternalAuthenticator\md5.asp" />
+    <Content Include="js\plugins\imagemanager\plugins\Favorites\bin\FavoritesPlugin.dll" />
+    <Content Include="js\plugins\imagemanager\plugins\Favorites\css\favorites.css" />
+    <Content Include="js\plugins\imagemanager\plugins\Favorites\img\favorites.png" />
+    <Content Include="js\plugins\imagemanager\plugins\Favorites\js\favorites.js" />
+    <Content Include="js\plugins\imagemanager\plugins\Favorites\resources.xml" />
+    <Content Include="js\plugins\imagemanager\plugins\History\bin\HistoryPlugin.dll" />
+    <Content Include="js\plugins\imagemanager\plugins\History\css\history.css" />
+    <Content Include="js\plugins\imagemanager\plugins\History\img\clock.png" />
+    <Content Include="js\plugins\imagemanager\plugins\History\js\history.js" />
+    <Content Include="js\plugins\imagemanager\plugins\History\resources.xml" />
+    <Content Include="js\plugins\imagemanager\plugins\Uploaded\bin\UploadedPlugin.dll" />
+    <Content Include="js\plugins\imagemanager\plugins\Uploaded\css\uploaded.css" />
+    <Content Include="js\plugins\imagemanager\plugins\Uploaded\img\go-up.png" />
+    <Content Include="js\plugins\imagemanager\plugins\Uploaded\js\uploaded.js" />
+    <Content Include="js\plugins\imagemanager\plugins\Uploaded\resources.xml" />
+    <Content Include="js\plugins\imagemanager\plugins\_Template\bin\TemplatePlugin.dll" />
+    <Content Include="js\plugins\imagemanager\plugins\_Template\src\vb\TemplatePlugin.vb" />
+    <Content Include="js\plugins\imagemanager\readme.txt" />
+    <Content Include="js\plugins\imagemanager\rpc\default.aspx" />
+    <Content Include="js\plugins\imagemanager\rpc\index.aspx" />
+    <Content Include="js\plugins\imagemanager\stream\default.aspx" />
+    <Content Include="js\plugins\imagemanager\stream\index.aspx" />
+    <Content Include="js\plugins\preview\editor_plugin.js" />
+    <Content Include="js\plugins\preview\editor_plugin_src.js" />
+    <Content Include="js\plugins\emotions\editor_plugin.js" />
+    <Content Include="js\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="js\plugins\emotions\emotions.htm" />
+    <Content Include="js\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="js\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="js\plugins\emotions\js\emotions.js" />
+    <Content Include="js\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="js\plugins\preview\example.html" />
+    <Content Include="js\plugins\example\dialog.htm" />
+    <Content Include="js\plugins\example\editor_plugin.js" />
+    <Content Include="js\plugins\example\editor_plugin_src.js" />
+    <Content Include="js\plugins\example\img\example.gif" />
+    <Content Include="js\plugins\example\js\dialog.js" />
+    <Content Include="js\plugins\example\langs\en.js" />
+    <Content Include="js\plugins\example\langs\en_dlg.js" />
+    <Content Include="js\plugins\fullpage\css\fullpage.css" />
+    <Content Include="js\plugins\fullpage\editor_plugin.js" />
+    <Content Include="js\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="js\plugins\fullpage\fullpage.htm" />
+    <Content Include="js\plugins\fullpage\js\fullpage.js" />
+    <Content Include="js\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="js\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="js\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="js\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="js\plugins\iespell\editor_plugin.js" />
+    <Content Include="js\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="js\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="js\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="js\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="js\plugins\inlinepopups\template.htm" />
+    <Content Include="js\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="js\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="js\plugins\layer\editor_plugin.js" />
+    <Content Include="js\plugins\layer\editor_plugin_src.js" />
+    <Content Include="js\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="js\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="js\plugins\media\css\content.css" />
+    <Content Include="js\plugins\media\css\media.css" />
+    <Content Include="js\plugins\media\editor_plugin.js" />
+    <Content Include="js\plugins\media\editor_plugin_src.js" />
+    <Content Include="js\plugins\media\img\flash.gif" />
+    <Content Include="js\plugins\media\img\flv_player.swf" />
+    <Content Include="js\plugins\media\img\quicktime.gif" />
+    <Content Include="js\plugins\media\img\realmedia.gif" />
+    <Content Include="js\plugins\media\img\shockwave.gif" />
+    <Content Include="js\plugins\media\img\trans.gif" />
+    <Content Include="js\plugins\media\img\windowsmedia.gif" />
+    <Content Include="js\plugins\media\js\embed.js" />
+    <Content Include="js\plugins\media\js\media.js" />
+    <Content Include="js\plugins\media\langs\en_dlg.js" />
+    <Content Include="js\plugins\media\media.htm" />
+    <Content Include="js\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="js\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="js\plugins\noneditable\editor_plugin.js" />
+    <Content Include="js\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="js\plugins\pagebreak\css\content.css" />
+    <Content Include="js\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="js\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="js\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="js\plugins\pagebreak\img\trans.gif" />
+    <Content Include="js\plugins\paste\editor_plugin.js" />
+    <Content Include="js\plugins\paste\editor_plugin_src.js" />
+    <Content Include="js\plugins\paste\js\pastetext.js" />
+    <Content Include="js\plugins\paste\js\pasteword.js" />
+    <Content Include="js\plugins\paste\langs\en_dlg.js" />
+    <Content Include="js\plugins\paste\pastetext.htm" />
+    <Content Include="js\plugins\paste\pasteword.htm" />
+    <Content Include="js\plugins\preview\jscripts\embed.js" />
+    <Content Include="js\plugins\preview\preview.html" />
+    <Content Include="js\plugins\print\editor_plugin.js" />
+    <Content Include="js\plugins\print\editor_plugin_src.js" />
+    <Content Include="js\plugins\save\editor_plugin.js" />
+    <Content Include="js\plugins\save\editor_plugin_src.js" />
+    <Content Include="js\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="js\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="js\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="js\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="js\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="js\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="js\plugins\spellchecker\css\content.css" />
+    <Content Include="js\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="js\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="js\plugins\spellchecker\img\wline.gif" />
+    <Content Include="js\plugins\style\css\props.css" />
+    <Content Include="js\plugins\style\editor_plugin.js" />
+    <Content Include="js\plugins\style\editor_plugin_src.js" />
+    <Content Include="js\plugins\style\js\props.js" />
+    <Content Include="js\plugins\style\langs\en_dlg.js" />
+    <Content Include="js\plugins\style\props.htm" />
+    <Content Include="js\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="js\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="js\plugins\table\cell.htm" />
+    <Content Include="js\plugins\table\css\cell.css" />
+    <Content Include="js\plugins\table\css\row.css" />
+    <Content Include="js\plugins\table\css\table.css" />
+    <Content Include="js\plugins\table\editor_plugin.js" />
+    <Content Include="js\plugins\table\editor_plugin_src.js" />
+    <Content Include="js\plugins\table\js\cell.js" />
+    <Content Include="js\plugins\table\js\merge_cells.js" />
+    <Content Include="js\plugins\table\js\row.js" />
+    <Content Include="js\plugins\table\js\table.js" />
+    <Content Include="js\plugins\table\langs\en_dlg.js" />
+    <Content Include="js\plugins\table\merge_cells.htm" />
+    <Content Include="js\plugins\table\row.htm" />
+    <Content Include="js\plugins\table\table.htm" />
+    <Content Include="js\plugins\template\blank.htm" />
+    <Content Include="js\plugins\template\css\template.css" />
+    <Content Include="js\plugins\template\editor_plugin.js" />
+    <Content Include="js\plugins\template\editor_plugin_src.js" />
+    <Content Include="js\plugins\template\js\template.js" />
+    <Content Include="js\plugins\template\langs\en_dlg.js" />
+    <Content Include="js\plugins\template\template.htm" />
+    <Content Include="js\plugins\visualchars\editor_plugin.js" />
+    <Content Include="js\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="js\plugins\wordcount\editor_plugin.js" />
+    <Content Include="js\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="js\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="js\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="js\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="js\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="js\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="js\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="js\plugins\xhtmlxtras\del.htm" />
+    <Content Include="js\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="js\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="js\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="js\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="js\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="js\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="js\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="js\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="js\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="js\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="js\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="js\themes\advanced\about.htm" />
+    <Content Include="js\themes\advanced\anchor.htm" />
+    <Content Include="js\themes\advanced\charmap.htm" />
+    <Content Include="js\themes\advanced\color_picker.htm" />
+    <Content Include="js\themes\advanced\editor_template.js" />
+    <Content Include="js\themes\advanced\editor_template_src.js" />
+    <Content Include="js\themes\advanced\image.htm" />
+    <Content Include="js\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="js\themes\advanced\img\icons.gif" />
+    <Content Include="js\themes\advanced\js\about.js" />
+    <Content Include="js\themes\advanced\js\anchor.js" />
+    <Content Include="js\themes\advanced\js\charmap.js" />
+    <Content Include="js\themes\advanced\js\color_picker.js" />
+    <Content Include="js\themes\advanced\js\image.js" />
+    <Content Include="js\themes\advanced\js\link.js" />
+    <Content Include="js\themes\advanced\js\source_editor.js" />
+    <Content Include="js\themes\advanced\langs\en.js" />
+    <Content Include="js\themes\advanced\langs\en_dlg.js" />
+    <Content Include="js\themes\advanced\link.htm" />
+    <Content Include="js\themes\advanced\skins\default\content.css" />
+    <Content Include="js\themes\advanced\skins\default\dialog.css" />
+    <Content Include="js\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="js\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="js\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="js\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="js\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="js\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="js\themes\advanced\skins\default\ui.css" />
+    <Content Include="js\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="js\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="js\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="js\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="js\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="js\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="js\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="js\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="js\themes\advanced\source_editor.htm" />
+    <Content Include="js\themes\simple\editor_template.js" />
+    <Content Include="js\themes\simple\editor_template_src.js" />
+    <Content Include="js\themes\simple\img\icons.gif" />
+    <Content Include="js\themes\simple\langs\en.js" />
+    <Content Include="js\themes\simple\skins\default\content.css" />
+    <Content Include="js\themes\simple\skins\default\ui.css" />
+    <Content Include="js\themes\simple\skins\o2k7\content.css" />
+    <Content Include="js\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="js\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="js\tiny_mce.js" />
+    <Content Include="js\tiny_mce_popup.js" />
+    <Content Include="js\tiny_mce_src.js" />
+    <Content Include="js\utils\editable_selects.js" />
+    <Content Include="js\utils\form_utils.js" />
+    <Content Include="js\utils\mctabs.js" />
+    <Content Include="js\utils\validate.js" />
+    <Content Include="js\xVal.extensions.js" />
+    <Content Include="js\xVal.jquery.validate.js" />
+    <Content Include="NHibernate.config" />
+    <Content Include="Views\Editor\Editor.aspx" />
+    <Content Include="Views\Grid\Index.aspx" />
+    <Content Include="Views\Login\Index.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="js\plugins\autosave\images\" />
+    <Folder Include="js\plugins\imagemanager\css\_cache\" />
+    <Folder Include="js\plugins\imagemanager\js\_cache\" />
+    <Folder Include="js\plugins\imagemanager\pages\im\img\manager\" />
+    <Folder Include="js\plugins\spellchecker\classes\utils\" />
+    <Folder Include="js\plugins\spellchecker\includes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4820</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a3ebd92e-87f9-4f2c-953c-297557dd995f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/UpdaterServices/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="e8a31cf2-2526-4dc3-b85e-b8a62ed4b9eb" SourceId="1" SourceUrl="http://localhost:9999/UpdaterServices/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="60545c56-90af-411d-9779-7ba4e90e13cf" SourceId="1" SourceUrl="http://localhost:9999/UpdaterServices/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="abcbc508-80df-4169-bb7f-06e0416dc040" SourceId="1" SourceUrl="http://localhost:9999/UpdaterServices/?xsd=xsd0" />
+    <MetadataFile FileName="OutfitUpdaterService.wsdl" MetadataType="Wsdl" ID="5581a9ec-a7b3-4937-bd9e-bca995face75" SourceId="1" SourceUrl="http://localhost:9999/UpdaterServices/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

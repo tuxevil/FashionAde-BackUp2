@@ -1,0 +1,376 @@
+<?xml version="1.0" ?> 
+<project name="FashionAde" default="build" xmlns="http://nant.sf.net/release/0.91-alpha1/nant.xsd">      
+	<property name="nant.settings.currentframework" value="net-3.5" />
+	<property name="project.rootdirectory" value="." />
+  <property name="company.name" value="Abundant Closet LLC" />
+   
+  <!-- Version -->
+  <property name="version.major" value="0"/>
+  <property name="version.minor" value="9"/>
+  <property name="version.build" value="32"/>
+  <property name="version.revision" value="3" />
+  <property name="project.fullversion" value="${version.major}.${version.minor}.${version.build}" dynamic="true" />
+  <property name="project.fullversion.clean" value="${version.major}-${version.minor}-${version.build}" dynamic="true" />
+  <property name="project.config" value="release" />
+ 
+  <property name="database.qa" value="Server=dbserver;Database=fashionade_qa;User ID=root;Password=obelisco;Allow Batch=true;Default Command Timeout=120;"/>
+
+  <property name="dir.lib" value="lib" />
+  <property name="dir.solution" value="."/>
+  <property name="dir.web" value="${dir.solution}\app\FashionAde.Web"/>
+  <property name="dir.webadmin" value="${dir.solution}\FashionAde.WebAdmin"/>
+  <property name="dir.hostservice" value="${dir.solution}\app\FashionAde.ServiceHost"/>
+  <property name="dir.test" value="${dir.solution}\tests\FashionAde.Tests"/>
+
+  <property name="publish.dir" value="${dir.solution}\deploy2"/>
+  <property name="publish.web" value="${publish.dir}\web"/>
+  <property name="publish.webadmin" value="${publish.dir}\webadmin"/>
+  <property name="publish.hostservice" value="${publish.dir}\hostservice"/>
+
+  <property name="qa.dir" value="\\wsv01\Projects\QA\Fashion Ade"/>
+  <property name="qa.web" value="${qa.dir}\WebSite"/>
+  <property name="qa.webadmin" value="${qa.dir}\AdminSite"/>
+  <property name="qa.hostservice" value="${qa.dir}\HostService"/>
+
+  <target name="move-to-qa" depends="build-to-qa, copy-to-qa"></target>
+  <target name="build-to-qa" depends="build, rename-to-qa"></target>
+  <target name="build" depends="deploy"></target>
+  <target name="build-to-prd" depends="deploy, zip-to-prd"></target>
+  <target name="deploy" depends="version, compile, copyfolders"></target>
+
+  <target name="compile" description="Compile the complete solution">
+    <loadtasks assembly="${dir.lib}\nant-contrib\NAnt.Contrib.Tasks.dll" />
+
+    <msbuild project="${dir.solution}\FashionAde.sln" target="Rebuild" verbosity="Minimal">
+      <property name="Configuration" value="${project.config}" />
+      <arg value="/nologo"/>
+    </msbuild>
+   
+  </target>
+  
+  <target name="copyfolders" description="Create the deployed folders">
+    <loadtasks assembly="${dir.lib}\nant-contrib\Nybble.NAntTasks.dll" />
+    
+    <delete dir="${publish.dir}" includeemptydirs="true" />
+    <mkdir dir="${publish.dir}" />    
+    <mkdir dir="${publish.web}"/>
+    <mkdir dir="${publish.webadmin}"/>
+    <mkdir dir="${publish.hostservice}"/>
+    
+    <copy todir="${publish.web}" includeemptydirs="false">
+      <fileset basedir="${dir.web}">
+        <exclude name="**/*.cs"/>
+        <exclude name="**/*.pdb"/>
+        <exclude name="**/*.csproj*"/>
+        <exclude name="**/obj/**"/>
+        <include name="**/*.*"/>
+      </fileset>
+    </copy>
+    
+    <copy todir="${publish.webadmin}" includeemptydirs="false">
+      <fileset basedir="${dir.webadmin}">
+        <exclude name="**/*.cs"/>
+        <exclude name="**/*.pdb"/>
+        <exclude name="**/*.csproj*"/>
+        <exclude name="**/obj/**"/>
+        <include name="**/*.*"/>
+      </fileset>
+    </copy>
+
+    <copy todir="${publish.hostservice}" includeemptydirs="false">
+      <fileset basedir="${dir.hostservice}\bin\${project.config}">
+        <exclude name="**/*.cs"/>
+        <exclude name="**/*.pdb"/>
+        <exclude name="**/*.csproj*"/>
+        <exclude name="**/obj/**"/>
+        <include name="**/*.*"/>
+      </fileset>
+    </copy>
+
+    <xmlpoke
+                file="${publish.web}\Web.config"
+                xpath="/configuration/system.web/compilation/@debug"
+                value="false" />
+    <xmlpoke
+            file="${publish.webadmin}\Web.config"
+            xpath="/configuration/system.web/compilation/@debug"
+            value="false" />
+
+    <foreach item="File" property="filename">
+      <in>
+        <items>
+          <include name="${publish.web}\**\all.css" />
+          <include name="${publish.web}\**\common.js" />
+          <include name="${publish.web}\**\logic.js" />
+        </items>
+      </in>
+      <do>
+        <call target="javascript.minify" />
+
+        <property name="source.file" value="${path::get-file-name-without-extension(filename)}${string::to-lower(path::get-extension(filename))}"/>
+        <property name="dest.file" value="${path::get-file-name-without-extension(filename)}${project.fullversion.clean}${string::to-lower(path::get-extension(filename))}"/>
+        <property name="dest.filename" value="${path::get-directory-name(filename)}\${dest.file}"/>
+
+        <move file="${filename}" tofile="${dest.filename}" overwrite="true" />
+        <delete file="${filename}" />
+
+        <replace token="${source.file}" value="${dest.file}">
+          <fileset basedir="${publish.web}">
+            <include name="**/*.css"/>
+            <include name="**/common.js"/>
+            <include name="**/logic.js"/>
+            <include name="**/*.aspx"/>
+            <include name="**/*.html"/>
+            <include name="**/*.ascx"/>
+            <include name="**/*.Master"/>
+          </fileset>
+        </replace>
+
+      </do>
+    </foreach>
+  </target>
+
+  <target name="zip-to-prd" depends="rename-to-prd">
+    <zip zipfile="${publish.dir}\${project::get-name()}-${project.config}-${project.fullversion}.zip">
+      <fileset basedir="${publish.dir}">
+        <include name="**/*.*"/>
+      </fileset>
+    </zip>    
+  </target>
+
+  <target name="rename-to-qa">
+    <loadtasks assembly="${dir.lib}\nant-contrib\Nybble.NAntTasks.dll" />
+
+    <xmlpoke file="${publish.hostservice}\FashionAde.ServiceHost.exe.config"
+        xpath="/configuration/appSettings/add[@key='OUImportation_Path']/@value" value="\\wsv01\Projects\QA\Fashion Ade\ImportFiles\" />
+
+    <xmlpoke file="${publish.hostservice}\FashionAde.ServiceHost.exe.config"
+        xpath="/configuration/appSettings/add[@key='DefaultOU']/@value" value="7313485227855" />
+
+    <xmlpoke file="${publish.hostservice}\FashionAde.ServiceHost.exe.config"
+        xpath="/configuration/appSettings/add[@key='OutfitEngine_SharePath']/@value" value="\\dbserver\FashionAdeImport" />
+
+    <xmlpoke file="${publish.hostservice}\FashionAde.ServiceHost.exe.config"
+        xpath="/configuration/appSettings/add[@key='OutfitEngine_DatabaseFilePath']/@value" value="c:\FashionAdeImport" />
+
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='StaticURL']/@value" value="as{0}.fashion-ade.com" />
+
+<!--    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='StaticURL']/@value" value="as{0}.fade.app.nybblenetwork.com" />-->
+
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Template_SiteUrl']/@value" value="http://site.fade.app.nybblenetwork.com" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Template_Location']/@value" value="E:\Projects\QA\Fashion Ade\WebSite\res\mail" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Template_SiteName']/@value" value="Fashion Ade" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Mailing_UseSsl']/@value" value="false" />
+
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Resources_Path']/@value" value="E:\Projects\QA\Fashion Ade\WebSite\res" />
+
+    <xmlpoke file="${publish.web}\Web.config"
+      xpath="/configuration/appSettings/add[@key='IsInBeta']/@value" value="true" />
+
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='FacebookConnectId']/@value" value="118931308122977" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='SiteURL']/@value" value="http://site.fade.app.nybblenetwork.com" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='ContactsPageUrl']/@value" value="/Contact/Index/default.aspx" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Google_ApplicationName']/@value" value="FADE" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Google_ReturnUrl']/@value" value="/google.authorize" />
+    
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Live_ApplicationId']/@value" value="000000004C02CDCE" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Live_Secret']/@value" value="Ia2DXfalryOSwcmXGlWfjrMjkOimGDgf" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Live_SecurityAlgorithm']/@value" value="wsignin1.0" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Live_ReturnUrl']/@value" value="/live.authorize" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Live_PolicyUrl']/@value" value="/home/privacy/default.aspx" />
+
+    <xmlpoke file="${publish.web}\Web.config"
+    xpath="/configuration/appSettings/add[@key='Yahoo_ApplicationId']/@value" value="KiHYiM74" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Yahoo_ApiKey']/@value" value="dj0yJmk9dzZVWnQ3b1VESmtUJmQ9WVdrOVMybElXV2xOTnpRbWNHbzlNak01TlRVeE9EWXkmcz1jb25zdW1lcnNlY3JldCZ4PWM2" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Yahoo_Secret']/@value" value="38452bbea4909ed73ca5f02d34b742783780809f" />
+    <xmlpoke file="${publish.web}\Web.config"
+        xpath="/configuration/appSettings/add[@key='Yahoo_ReturnUrl']/@value" value="/yahoo.authorize" />
+
+    <xmlpoke file="${publish.web}\Web.config"
+      xpath="/configuration/connectionStrings/add[@name='LocalMySqlServer']/@connectionString" value="${database.qa}" />
+
+    <xmlpoke file="${publish.webadmin}\Web.config"
+      xpath="/configuration/connectionStrings/add[@name='LocalMySqlServer']/@connectionString" value="${database.qa}" />
+
+    <xmlpoke file="${publish.web}\NHibernate.config"
+      xpath="/nhc:hibernate-configuration/nhc:session-factory/nhc:property[@name='connection.connection_string']" value="${database.qa}">
+      <namespaces>
+        <namespace prefix="nhc" uri="urn:nhibernate-configuration-2.2" />
+      </namespaces>
+    </xmlpoke>
+
+    <xmlpoke file="${publish.webadmin}\NHibernate.config"
+      xpath="/nhc:hibernate-configuration/nhc:session-factory/nhc:property[@name='connection.connection_string']" value="${database.qa}" >
+    <namespaces>
+      <namespace prefix="nhc" uri="urn:nhibernate-configuration-2.2" />
+    </namespaces>
+    </xmlpoke>
+
+    <xmlpoke file="${publish.hostservice}\NHibernate.config"
+      xpath="/nhc:hibernate-configuration/nhc:session-factory/nhc:property[@name='connection.connection_string']" value="${database.qa}" >
+    <namespaces>
+      <namespace prefix="nhc" uri="urn:nhibernate-configuration-2.2" />
+    </namespaces>
+    </xmlpoke>
+
+    <replace token="/static/" value="http://static.fade.app.nybblenetwork.com/">
+      <fileset basedir="${publish.web}">
+        <include name="**/*.css"/>
+        <include name="**/common.js"/>
+        <include name="**/logic.js"/>
+        <include name="**/*.aspx"/>
+        <include name="**/*.html"/>
+        <include name="**/*.htm"/>
+        <include name="**/*.ascx"/>
+        <include name="**/*.master"/>
+      </fileset>
+    </replace>
+
+  </target>
+  
+  <target name="rename-to-prd">
+    <loadtasks assembly="${dir.lib}\nant-contrib\Nybble.NAntTasks.dll" />
+
+    <move file="${publish.web}\Web.config" tofile="${publish.web}\Release${project.fullversion}.config" overwrite="true" />
+    <move file="${publish.webadmin}\Web.config" tofile="${publish.webadmin}\Release${project.fullversion}.config" overwrite="true" />
+    <move file="${publish.hostservice}\FashionAde.ServiceHost.exe.config" tofile="${publish.hostservice}\Release${project.fullversion}.config" overwrite="true" />
+    <delete file="${publish.web}\Web.config" />
+    <delete file="${publish.webadmin}\Web.config" />
+    <delete file="${publish.hostservice}\FashionAde.ServiceHost.exe.config" />
+
+    <replace token="/static/" value="http://static.fashion-ade.com/">
+      <fileset basedir="${publish.web}">
+        <include name="**/*.css"/>
+        <include name="**/common.js"/>
+        <include name="**/logic.js"/>
+        <include name="**/*.aspx"/>
+        <include name="**/*.html"/>
+        <include name="**/*.htm"/>
+        <include name="**/*.ascx"/>
+        <include name="**/*.master"/>
+      </fileset>
+    </replace>
+  </target>
+
+  <target name="copy-to-qa">
+
+    <exec program="sc"
+      commandline='\\wsv01 stop "Fashion Ade Outfit Engine"'
+      workingdir="." />
+
+    <delete includeemptydirs="true">
+      <fileset basedir="${qa.web}">
+        <exclude name="**/Garments/**"/>
+        <include name="**/*.*"/>
+      </fileset>
+    </delete>
+
+    <delete includeemptydirs="true">
+      <fileset basedir="${qa.webadmin}">
+        <include name="**/*.*"/>
+      </fileset>
+    </delete>
+
+    <copy todir="${qa.webadmin}" includeemptydirs="false">
+      <fileset basedir="${publish.webadmin}">
+        <include name="**/*.*"/>
+      </fileset>
+    </copy>
+
+    <copy todir="${qa.web}" includeemptydirs="false">
+      <fileset basedir="${publish.web}">
+        <include name="**/*.*"/>
+      </fileset>
+    </copy>
+
+    <delete includeemptydirs="true">
+      <fileset basedir="${qa.hostservice}">
+        <include name="**/*.*"/>
+      </fileset>
+    </delete>
+
+    <copy todir="${qa.hostservice}" includeemptydirs="false">
+      <fileset basedir="${publish.hostservice}">
+        <include name="**/*.*"/>
+      </fileset>
+    </copy>
+
+    <exec program="sc"
+      commandline='\\wsv01 start "Fashion Ade Outfit Engine"'
+      workingdir="." />
+  </target>
+
+  <target name="version" description="Generate AssemblyInfo">
+    <property name="version.build" value="${build.number}" if="${property::exists('build.number')}"/>
+    <property name="version.revision" value="${build.vcs.number.1}" if="${property::exists('build.vcs.number.1')}" />
+
+    <echo message="Marking build with version ${project.fullversion}" />
+
+    <delete file="${dir.solution}\CommonAssemblyInfo.cs" failonerror="false"/>
+
+    <asminfo output="${dir.solution}\CommonAssemblyInfo.cs" language="CSharp">
+      <imports>
+        <import namespace="System.Reflection" />
+        <import namespace="System.Runtime.InteropServices" />
+      </imports>
+      <attributes>
+      </attributes>
+      <references>
+        <include name="System.dll" />
+      </references>
+    </asminfo>
+    
+  </target>
+
+  <target name="javascript.minify">
+    <exec program="java" workingdir="${dir.lib}">
+      <arg value="-jar" />
+      <arg value="yuicompressor-2.4.2.jar" />
+      <arg value="--charset" />
+      <arg value="utf-8" />
+      <arg value="-o" />
+      <arg value="${filename}.min" />
+      <arg value="${filename}" />
+    </exec>
+    <move file="${filename}.min" tofile="${filename}" overwrite="true" />
+  </target>
+
+  <target name="test" description="Run unit tests" depends="build">
+    <loadtasks assembly="${dir.lib}\nant-contrib\Nybble.NAntTasks.dll" />
+    
+    <property name="windows-path" value="${string::to-lower(environment::get-variable('PATH'))}"/>
+    <property name="nunit-in-path"
+        value="${string::contains(windows-path, 'nunit')}"/>
+    <echo message="Tests skipped because no NUnit folder was found in the Windows path."
+        unless="${nunit-in-path}"/>
+    <exec program="nunit-console.exe" if="${nunit-in-path}">
+        <arg file="${dir.tests}/FashionAde.Tests.nunit"/>
+    </exec>
+    <property name="fxcop-in-path"
+        value="${string::contains(windows-path, 'fxcop')}"/>
+    <echo message="FxCop skipped because no FxCop folder was found in the Windows path."
+        unless="${fxcop-in-path}"/>
+    <fxcop projectFile="${dir.solution}/FashionAde.fxcop" directOutputToConsole="true" 
+        failOnAnalysisError="true" if="${fxcop-in-path}"/>
+  </target>
+
+</project>

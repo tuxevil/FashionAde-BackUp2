@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ADD3200-7AA6-4D85-A02A-2D22D839B42F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionAde.Data</RootNamespace>
+    <AssemblyName>FashionAde.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Inflector.Net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Inflector.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib, Version=1.0.0.99, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.0.0.2001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Linq, Version=1.0.0.0, Culture=neutral, PublicKeyToken=444cf6a87fdab271, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\NHibernate.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpArch, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\SharpArch.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FashionAde.Core\FashionAde.Core.csproj">
+      <Project>{26375851-E958-47FE-B328-B7CF26DFD684}</Project>
+      <Name>FashionAde.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionAde.Utils\FashionAde.Utils.csproj">
+      <Project>{06B4EBD9-5FFE-451F-8022-D84868B470E1}</Project>
+      <Name>FashionAde.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NHibernateMaps\AutoPersistenceModelGenerator.cs" />
+    <Compile Include="NHibernateMaps\Conventions\ColumnNullabiltyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\EnumConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\ForeignKeyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\HasManyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\HasManyToManyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\ManyToManyTableNameConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\PrimaryKeyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\ReferenceConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\SubClassConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\TableNameConvention.cs" />
+    <Compile Include="NHibernateMaps\SpecialMapping.cs" />
+    <Compile Include="Repository\BasicUserRepository.cs" />
+    <Compile Include="Repository\BrandSetRepository.cs" />
+    <Compile Include="Repository\CategoryRepository.cs" />
+    <Compile Include="Repository\ClosetOutfitRepository.cs" />
+    <Compile Include="Repository\ClosetRepository.cs" />
+    <Compile Include="Repository\ColorFamilyRepository.cs" />
+    <Compile Include="Repository\ColorRepository.cs" />
+    <Compile Include="Repository\ContentCategoryRepository.cs" />
+    <Compile Include="Repository\ContentRepository.cs" />
+    <Compile Include="Repository\ContentPublishedRepository.cs" />
+    <Compile Include="Repository\FriendProviderRepository.cs" />
+    <Compile Include="Repository\FriendRepository.cs" />
+    <Compile Include="Repository\InvitationCodeRepository.cs" />
+    <Compile Include="Repository\OutfitUpdaterRepository.cs" />
+    <Compile Include="Repository\PartnerRepository.cs" />
+    <Compile Include="Repository\FriendRatingInvitationRepository.cs" />
+    <Compile Include="Repository\TrendRepository.cs" />
+    <Compile Include="Repository\UserOutfitRepository.cs" />
+    <Compile Include="Repository\UserGarmentRepository.cs" />
+    <Compile Include="Repository\EventTypeRepository.cs" />
+    <Compile Include="Repository\FabricRepository.cs" />
+    <Compile Include="Repository\FashionFlavorRepository.cs" />
+    <Compile Include="Repository\GarmentRepository.cs" />
+    <Compile Include="Repository\PatternRepository.cs" />
+    <Compile Include="Repository\PreCombinationRepository.cs" />
+    <Compile Include="Repository\PreGarmentRepository.cs" />
+    <Compile Include="Repository\RegisteredUserRepository.cs" />
+    <Compile Include="Repository\SecurityQuestionRepository.cs" />
+    <Compile Include="Repository\SilouhetteRepository.cs" />
+    <Compile Include="Repository\StylePhotographRepository.cs" />
+    <Compile Include="Repository\StyleRuleRepository.cs" />
+    <Compile Include="Repository\UserSizeRepository.cs" />
+    <Compile Include="Repository\WishListRepository.cs" />
+    <Compile Include="Repository\WordingRepository.cs" />
+    <Compile Include="Repository\ZipCodeRepository.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

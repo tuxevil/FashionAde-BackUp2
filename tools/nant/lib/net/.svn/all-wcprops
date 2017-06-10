@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/net
+END
+CollectionGen.dll
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/net/CollectionGen.dll
+END
+Interop.WindowsInstaller.dll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/net/Interop.WindowsInstaller.dll
+END
+SourceSafe.Interop.dll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/net/SourceSafe.Interop.dll
+END
+Interop.StarTeam.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/net/Interop.StarTeam.dll
+END
+Interop.MsmMergeTypeLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nybble/!svn/ver/4514/FashionAde/trunk/tools/nant/lib/net/Interop.MsmMergeTypeLib.dll
+END

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FashionAde.Core.Accounts.TemporalUser">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Field Name="addedGarments" Hidden="true" />
+      <Field Name="referralTracking" Hidden="true" />
+      <Field Name="whishedGarments" Hidden="true" />
+    </Members>
+    <AssociationLine Name="AddedGarments" Type="FashionAde.Core.Clothing.Garment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="2.801" />
+        <Point X="6.125" Y="2.801" />
+        <Point X="6.125" Y="5.375" />
+        <Point X="6.5" Y="5.375" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="WhishedGarments" Type="FashionAde.Core.Clothing.Garment" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="2.812" />
+        <Point X="8.375" Y="2.812" />
+        <Point X="8.375" Y="5.625" />
+        <Point X="8" Y="5.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAIAAAAAAAAAAAAAABAAAAAQAAACAAAAg=</HashCode>
+      <FileName>Accounts\TemporalUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="AddedGarments" />
+      <Property Name="WhishedGarments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FashionAde.Core.Clothing.Garment">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="imageUri" Hidden="true" />
+      <Field Name="linkUri" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="tags" Hidden="true" />
+      <Field Name="thirdPartyGarments" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQQAAAEEAAAAAEAAAAAAAAABAAIAAUgAAABIAAAAAAA=</HashCode>
+      <FileName>Clothing\Garment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FashionAde.Core.Accounts.BasicUser">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Field Name="eventTypes" Hidden="true" />
+      <Field Name="invitedBy" Hidden="true" />
+      <Field Name="userContacts" Hidden="true" />
+      <Field Name="userFlavors" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BEgAAEACDABAggAAAAAAAAAAAAAAAAAABAAAAARAAAE=</HashCode>
+      <FileName>Accounts\BasicUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,136 @@
+9
+
+dir
+4929
+http://sourcesafe.nybblenetwork.com:8080/svn/nybble/FashionAde/trunk/FashionAde.WebAdmin/js/plugins
+http://sourcesafe.nybblenetwork.com:8080/svn/nybble
+
+
+
+2010-06-12T02:13:17.375568Z
+4420
+leonardo.rodriguez
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+420dda77-6af4-1841-a513-76830d1e3cad
+
+media
+dir
+
+pagebreak
+dir
+
+insertdatetime
+dir
+
+noneditable
+dir
+
+inlinepopups
+dir
+
+autoresize
+dir
+
+example
+dir
+
+emotions
+dir
+
+iespell
+dir
+
+save
+dir
+
+advhr
+dir
+
+tabfocus
+dir
+
+advlist
+dir
+
+layer
+dir
+
+imagemanager
+dir
+
+advimage
+dir
+
+preview
+dir
+
+directionality
+dir
+
+visualchars
+dir
+
+wordcount
+dir
+
+legacyoutput
+dir
+
+table
+dir
+
+autosave
+dir
+
+advlink
+dir
+
+print
+dir
+
+nonbreaking
+dir
+
+fullpage
+dir
+
+style
+dir
+
+searchreplace
+dir
+
+fullscreen
+dir
+
+spellchecker
+dir
+
+contextmenu
+dir
+
+template
+dir
+
+paste
+dir
+
+bbcode
+dir
+
+xhtmlxtras
+dir
+

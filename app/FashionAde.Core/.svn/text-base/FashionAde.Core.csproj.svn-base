@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26375851-E958-47FE-B328-B7CF26DFD684}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionAde.Core</RootNamespace>
+    <AssemblyName>FashionAde.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib, Version=1.0.0.99, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator, Version=1.0.0.4000, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpArch, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\sharp-architecture\SharpArch.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\BasicUser.cs" />
+    <Compile Include="Accounts\IBasicUser.cs" />
+    <Compile Include="Accounts\InvitationCode.cs" />
+    <Compile Include="Accounts\InvitedUser.cs" />
+    <Compile Include="Accounts\FriendProvider.cs" />
+    <Compile Include="Accounts\PrivacyStatus.cs" />
+    <Compile Include="Accounts\RegisteredUser.cs" />
+    <Compile Include="Accounts\SecurityQuestion.cs" />
+    <Compile Include="Accounts\UserFlavor.cs" />
+    <Compile Include="Accounts\UserSize.cs" />
+    <Compile Include="Accounts\ZipCode.cs" />
+    <Compile Include="Clothing\ApprovalStatus.cs" />
+    <Compile Include="Clothing\Category.cs" />
+    <Compile Include="Clothing\Color.cs" />
+    <Compile Include="Clothing\ColorFamily.cs" />
+    <Compile Include="Clothing\ColorFamilyKeywordsByPartner.cs" />
+    <Compile Include="Clothing\PatternKeywordsByPartner.cs" />
+    <Compile Include="Clothing\Fabric.cs" />
+    <Compile Include="Clothing\Garment.cs" />
+    <Compile Include="Clothing\GarmentShape.cs" />
+    <Compile Include="Clothing\GarmentStatus.cs" />
+    <Compile Include="Clothing\GarmentTags.cs" />
+    <Compile Include="Clothing\GarmentVisibility.cs" />
+    <Compile Include="Clothing\LayerCode.cs" />
+    <Compile Include="Clothing\Pattern.cs" />
+    <Compile Include="Clothing\Season.cs" />
+    <Compile Include="Clothing\Silouhette.cs" />
+    <Compile Include="Clothing\SilouhetteKeywordsByPartner.cs" />
+    <Compile Include="Clothing\Structure.cs" />
+    <Compile Include="Clothing\Tag.cs" />
+    <Compile Include="Clothing\UserGarment.cs" />
+    <Compile Include="ContentManagement\Content.cs" />
+    <Compile Include="ContentManagement\ContentBase.cs" />
+    <Compile Include="ContentManagement\ContentCategory.cs" />
+    <Compile Include="ContentManagement\ContentExceptions.cs" />
+    <Compile Include="ContentManagement\ContentSectionBase.cs" />
+    <Compile Include="ContentManagement\ContentStatus.cs" />
+    <Compile Include="ContentManagement\ContentType.cs" />
+    <Compile Include="ContentManagement\ContentPublished.cs" />
+    <Compile Include="ContentManagement\ContentPublishedFactory.cs" />
+    <Compile Include="DataInterfaces\IBasicUserRepository.cs" />
+    <Compile Include="DataInterfaces\IColorFamilyRepository.cs" />
+    <Compile Include="DataInterfaces\IContentPublishedRepository.cs" />
+    <Compile Include="DataInterfaces\IFriendProviderRepository.cs" />
+    <Compile Include="DataInterfaces\IFriendRepository.cs" />
+    <Compile Include="DataInterfaces\IInvitationCodeRepository.cs" />
+    <Compile Include="DataInterfaces\IOutfitUpdaterRepository.cs" />
+    <Compile Include="DataInterfaces\IContentCategoryRepository.cs" />
+    <Compile Include="DataInterfaces\IFriendRatingInvitationRepository.cs" />
+    <Compile Include="DataInterfaces\ITrendRepository.cs" />
+    <Compile Include="DataInterfaces\IUserOutfitRepository.cs" />
+    <Compile Include="DataInterfaces\IUserGarmentRepository.cs" />
+    <Compile Include="DataInterfaces\IColorRepository.cs" />
+    <Compile Include="DataInterfaces\IBrandSetRepository.cs" />
+    <Compile Include="DataInterfaces\ICategoryRepository.cs" />
+    <Compile Include="DataInterfaces\IFabricRepository.cs" />
+    <Compile Include="DataInterfaces\IPatternRepository.cs" />
+    <Compile Include="DataInterfaces\IPreCombinationRepository.cs" />
+    <Compile Include="DataInterfaces\IPreGarmentRepository.cs" />
+    <Compile Include="DataInterfaces\ISecurityQuestionRepository.cs" />
+    <Compile Include="DataInterfaces\ISilouhetteRepository.cs" />
+    <Compile Include="DataInterfaces\IStylePhotographRepository.cs" />
+    <Compile Include="DataInterfaces\IWordingRepository.cs" />
+    <Compile Include="Accounts\Friend.cs" />
+    <Compile Include="MVCInteraction\ClosetOutfitView.cs" />
+    <Compile Include="MVCInteraction\LayerResponse.cs" />
+    <Compile Include="MVCInteraction\ClosetOutfitGarmentView.cs" />
+    <Compile Include="MVCInteraction\MaxOutfitDetail.cs" />
+    <Compile Include="OutfitEngine\PreCombination.cs" />
+    <Compile Include="OutfitEngine\PreGarment.cs" />
+    <Compile Include="DataInterfaces\IZipCodeRepository.cs" />
+    <Compile Include="MVCInteraction\WebClosetGarment.cs" />
+    <Compile Include="OutfitEngine\PreOutfit.cs" />
+    <Compile Include="Accounts\RegisteredUserStatus.cs" />
+    <Compile Include="Services\AccessClosetService.cs" />
+    <Compile Include="Services\OutfitValidationService.cs" />
+    <Compile Include="Services\EditorRatingCalculatorService.cs" />
+    <Compile Include="Services\FlavorSelectionService.cs" />
+    <Compile Include="DataInterfaces\IPartnerRepository.cs" />
+    <Compile Include="DataInterfaces\IClosetOutfitRepository.cs" />
+    <Compile Include="DataInterfaces\IClosetRepository.cs" />
+    <Compile Include="DataInterfaces\IContentRepository.cs" />
+    <Compile Include="DataInterfaces\IEventTypeRepository.cs" />
+    <Compile Include="DataInterfaces\IFashionFlavorRepository.cs" />
+    <Compile Include="DataInterfaces\IGarmentRepository.cs" />
+    <Compile Include="DataInterfaces\IRegisteredUserRepository.cs" />
+    <Compile Include="DataInterfaces\IStyleRulesRepository.cs" />
+    <Compile Include="DataInterfaces\ITagRepository.cs" />
+    <Compile Include="DataInterfaces\IUserSizeRepository.cs" />
+    <Compile Include="DataInterfaces\IWishListRepository.cs" />
+    <Compile Include="FlavorSelection\BrandSet.cs" />
+    <Compile Include="EventType.cs" />
+    <Compile Include="FashionFlavor.cs" />
+    <Compile Include="OutfitEngine\ColorBlendingRules.cs" />
+    <Compile Include="OutfitEngine\RulePair.cs" />
+    <Compile Include="Services\IFlavorSelectionService.cs" />
+    <Compile Include="OutfitEngine\Combination.cs" />
+    <Compile Include="OutfitEngine\StyleRule.cs" />
+    <Compile Include="ThirdParties\OutfitUpdater.cs" />
+    <Compile Include="ThirdParties\OutfitUpdaterByPreCombination.cs" />
+    <Compile Include="UserCloset\UserOutfit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FlavorSelection\StylePhotograph.cs" />
+    <Compile Include="ThirdParties\IThirdParty.cs" />
+    <Compile Include="ThirdParties\Partner.cs" />
+    <Compile Include="Trends\TrendRule.cs" />
+    <Compile Include="Trends\Trend.cs" />
+    <Compile Include="UserCloset\Closet.cs" />
+    <Compile Include="UserCloset\ClosetGarment.cs" />
+    <Compile Include="UserCloset\ClosetOutfit.cs" />
+    <Compile Include="UserCloset\ClosetStatus.cs" />
+    <Compile Include="UserCloset\ClosetOutfitStatus.cs" />
+    <Compile Include="UserCloset\ClosetOutfitVisibility.cs" />
+    <Compile Include="UserCloset\FriendRating.cs" />
+    <Compile Include="UserCloset\FriendRatingInvitation.cs" />
+    <Compile Include="UserCloset\GarmentDetails.cs" />
+    <Compile Include="UserCloset\OutfitDetails.cs" />
+    <Compile Include="UserCloset\Rating.cs" />
+    <Compile Include="UserCloset\UserRating.cs" />
+    <Compile Include="UserCloset\WishGarment.cs" />
+    <Compile Include="UserCloset\WishList.cs" />
+    <Compile Include="FlavorSelection\Wording.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Accounts\_temporalUser.cd" />
+    <None Include="Accounts\_user Upload.cd" />
+    <None Include="Accounts\_userDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Clothing\_garmentTags.cd" />
+    <None Include="Clothing\_myGarments.cd" />
+    <None Include="ContentManagement\_content.cd" />
+    <None Include="FlavorSelection\_eventSelection.cd" />
+    <None Include="FlavorSelection\_flavorSelection.cd" />
+    <None Include="OutfitEngine\_outfitEngine.cd" />
+    <None Include="ThirdParties\_thirdParties.cd" />
+    <None Include="UserCloset\_closet.cd" />
+    <None Include="UserCloset\_closetMinimum.cd" />
+    <None Include="UserCloset\_wishList.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FakeRepositorys\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+      -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

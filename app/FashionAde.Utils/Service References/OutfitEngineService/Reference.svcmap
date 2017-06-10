@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d4b9fd83-c0a1-4824-b7d8-a0e819eda1d0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/Services/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OutfitEngineService.wsdl" MetadataType="Wsdl" ID="ad61382e-e7d5-49a2-8a0c-d0295511e5c5" SourceId="1" SourceUrl="http://localhost:9999/Services/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="381b758d-dd12-40a7-8c96-6693bdb4b6c5" SourceId="1" SourceUrl="http://localhost:9999/Services/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="f113e7f9-7bc4-489e-9ee0-fe6da57e93aa" SourceId="1" SourceUrl="http://localhost:9999/Services/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="5a94bfc3-a8c2-41d9-b113-9ad26ad5a1ae" SourceId="1" SourceUrl="http://localhost:9999/Services/?xsd=xsd2" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="b1fbb3b0-d7ff-4613-acfe-b9b2279a55b7" SourceId="1" SourceUrl="http://localhost:9999/Services/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
